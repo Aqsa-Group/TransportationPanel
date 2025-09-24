@@ -3,11 +3,15 @@
          lg:static lg:translate-x-0 lg:flex lg:flex-col" aria-label="Sidebar">
 
   {{-- header --}}
-  <div class="h-16 flex items-center justify-between px-4  border-gray-200">
-    <div class="flex items-center gap-2">
-      <img src="/img/Group 2.png" alt="badge" class="w-12 h-8"/>
-      <span>ادمین پنل</span>
-    </div>
+<div class="h-16 flex items-center justify-between border-gray-200">
+  <!-- لوگو + عنوان کنار هم -->
+  <div class="flex ">  <!-- فاصله بین عکس و متن -->
+    <img src="/img/Group 2.png" alt="badge" class="w-15 h-10" />
+    
+    <span class="text-gray-700 font-semibold">ادمین پنل</span>
+  </div>
+
+ 
     <button id="closeSidebar"
             class="lg:hidden inline-flex items-center justify-center rounded-lg border border-gray-200 p-2 hover:bg-gray-100 transition"
             aria-label="بستن">
