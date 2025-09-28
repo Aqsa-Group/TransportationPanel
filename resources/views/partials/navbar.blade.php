@@ -24,7 +24,7 @@
       </div>
 
       <div class="flex items-center gap-2 sm:gap-3">
-        <button class="rounded-xl border border-gray-200 p-2 hover:bg-gray-100 transition relative">
+        <button class="rounded-lg border border-gray-200 p-2 hover:bg-gray-100 transition relative">
           <i class="fa-regular fa-bell"></i>
           <span class="absolute -top-1 -right-1 bg-red-500 text-white text-[10px] rounded-full px-1.5">3</span>
         </button>
@@ -32,9 +32,10 @@
           <img src="/img/Icon Frame (1).png" class="w-5 h-5" alt="plus" />
         </button>
         <div class="xs:flex items-center gap-2">
-          <img src="/img/barber_team_03 1.png" class="w-9 h-9 rounded-full object-cover" alt="user" />
+          <img src="/img/barber_team_03 1.png" class="w-9 h-9 rounded-lg object-cover" alt="user" />
         </div>
       </div>
     </div>
   </div>
 </header>
+
