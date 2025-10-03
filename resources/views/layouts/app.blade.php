@@ -30,7 +30,7 @@
       @include('partials.navbar')
 
       {{-- کانتینر سکشن‌ها --}}
-      <main id="sections" class="mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
+      <main id="sections" class="mx-auto px-4 sm:px-6 lg:px-10 py-2 space-y-6">
         @yield('content')
       </main>
     </div>
