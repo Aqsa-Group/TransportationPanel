@@ -1,9 +1,9 @@
 <aside id="sidebar"
-  class="fixed inset-y-0 right-0 z-40 w-64 bg-white border-l border-gray-200 transform translate-x-full transition-transform duration-200 ease-out
-         lg:static lg:translate-x-0 lg:flex lg:flex-col" aria-label="Sidebar">
+  class="fixed inset-y-0 right-0 z-40 w-56 bg-white border-l border-gray-200 transform translate-x-full transition-transform duration-200 ease-out
+         lg:static lg:translate-x-0 lg:flex lg:flex-col lg:w-60" aria-label="Sidebar">
 
   {{-- header --}}
-<div class="h-16 flex items-center justify-between border-gray-200">
+<div class="h-16 flex items-center justify-between border-gray-300">
   
   <div class="flex "> 
     <img src="/img/Group 2.png" alt="badge" class="w-15 h-10" />

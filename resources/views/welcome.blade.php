@@ -6,39 +6,39 @@
 <Main>
   <div dir="rtl" class="bg-gray-100 min-h-screen p-2 pb-0 gap-2">
     <div class="max-w-7xl mx-auto">
-      <!-- فاصله بین ستون‌ها مثل عکس -->
+      
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-3">
 
-        <!-- چپ: کارت‌ها + گراف مفاد و ضرر -->
-        <div class="lg:col-span-2 space-y-3">
+        
+        <div class="lg:col-span-2 space-y-8">
 
           <!-- کارت‌ها -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-            <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3  ">
+            <div class="bg-white p-6 rounded-lg shadow-xl border-[2px] border-gray-300 border-soild ">
               <h2 class="text-2xl font-bold mt-2">872803.8؋</h2>
               <p class="text-lg text-gray-800">درآمد امروز</p>
               <p class="inline-flex text-xs font-medium text-green-500 bg-green-100 rounded py-1 px-2">12.5%+</p>
             </div>
 
-            <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+            <div class="bg-white p-6 rounded-lg shadow-xl border-[2px] border-gray-300 border-soild">
               <h2 class="text-2xl font-bold mt-2">929839؋</h2>
               <p class="text-lg text-gray-800">کل سفارشات</p>
               <p class="inline-flex text-xs font-medium text-red-500 bg-red-100 rounded py-1 px-2">4.1%-</p>
             </div>
 
-            <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+            <div class="bg-white p-6 rounded-lg shadow-xl border-[2px] border-gray-300 border-soild">
               <h2 class="text-2xl font-bold mt-2">9728888؋</h2>
               <p class="text-lg text-gray-800">کل درآمد</p>
               <p class="inline-flex text-xs font-medium text-green-500 bg-green-100 rounded py-1 px-2">7.5%+</p>
             </div>
 
-            <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+            <div class="bg-white p-6 rounded-lg shadow-xl border-[2px] border-gray-300 border-soild">
               <h2 class="text-2xl font-bold mt-2">1293823.12؋</h2>
               <p class="text-lg text-gray-800">کل مفاد</p>
               <p class="inline-flex text-xs font-medium text-green-500 bg-green-100 rounded py-1 px-2">7.5%+</p>
             </div>
 
-            <div class="stat-card bg-white rounded-lg shadow-lg p-6 border border-gray-200" data-change="0">
+            <div class="stat-card bg-white rounded-lg  p-6 shadow-xl border-[2px] border-gray-300 border-soild" data-change="0">
               <div class="flex items-center gap-2">
                 <p class="value text-xl font-bold">15</p>
                 <img src="/img/note-2.png" alt="complaints" class="h-5 w-5 rounded-full border border-gray-300" />
@@ -56,7 +56,7 @@
               </div>
             </div>
 
-            <div class="stat-card bg-white rounded-lg shadow-lg p-6 border border-gray-200" data-change="0">
+            <div class="stat-card bg-white rounded-lg  p-6 shadow-xl border-[2px] border-gray-300 border-soild" data-change="0">
               <div class="flex items-center gap-2">
                 <p class="value text-xl font-bold">200</p>
                 <img src="/img/people.png" alt="drivers" class="h-5 w-5 rounded-full border border-gray-300" />
@@ -76,166 +76,238 @@
           </div>
 
           <!-- گراف مفاد و ضرر (Line) -->
-          <div class="max-w-4xl bg-white rounded-2xl shadow-lg p-4 mt-2 mb-2 border border-gray-200">
-            <div class="flex items-center justify-between mb-5">
-              <h2 class="font-semibold text-gray-800">گراف مفاد و ضرر</h2>
-              <div class="flex items-center gap-5 text-sm text-gray-700">
-                <span class="flex items-center gap-2">
-                  <span class="inline-block w-3 h-3 rounded bg-sky-500"></span> مفاد
-                </span>
-                <span class="flex items-center gap-2">
-                  <span class="inline-block w-3 h-3 rounded bg-gray-400"></span> ضرر
-                </span>
-              </div>
-            </div>
+         
+<div class="max-w-4xl bg-white rounded-2xl  p-4 mt-2 mb-2 shadow-lg border-[2px] border-gray-300 border-soild">
+  <div class="flex items-center justify-between mb-5">
+    <h2 class="font-semibold text-gray-800">گراف مفاد و ضرر</h2>
+    <div class="flex items-center gap-5 text-sm text-gray-700">
+      <span class="flex items-center gap-2">
+        <span class="inline-block w-3 h-3 rounded bg-sky-500"></span> مفاد
+      </span>
+      <span class="flex items-center gap-2">
+        <span class="inline-block w-3 h-3 rounded bg-gray-400"></span> ضرر
+      </span>
+    </div>
+  </div>
 
-            <div class="relative">
-              <svg id="chart" class="w-full h-80"></svg>
-              <div id="xTicks" class="absolute bottom-1 left-0 right-0 px-2 flex justify-between text-[12px] text-gray-500"></div>
-            </div>
-          </div>
+  <div class="relative">
+    <svg id="chart" class="w-full h-80"></svg>
 
-          <style>
-            .draw { stroke-dasharray: var(--len); stroke-dashoffset: var(--len); animation: dash 1.4s ease-out forwards; }
-            .draw.delay { animation-delay: .2s; }
-            #xTicks span { opacity: 0; transform: translateY(4px); transition: .4s ease; }
-            #xTicks.ready span { opacity: 1; transform: translateY(0); }
-            @keyframes dash { to { stroke-dashoffset: 0; } }
-          </style>
+    <!-- برچسب‌های ماه: فاصله کمتر و فونت ریزتر -->
+    <div id="xTicks"
+         class="absolute bottom-1 left-0 right-0 px-1 flex justify-between text-[11px] tracking-tight text-gray-500"></div>
 
-          <script>
-            const labels = ["حمل","ثور","جوزا","سرطان","اسد","سنبله","میزان","عقرب","قوس","جدی","دلو","حوت"];
-            const profit = [30,45,40,22,85,28,80,32,26,50,60,90];
-            const loss   = [60,55,70,78,65,62,58,54,52,50,46,40];
+    <!-- تولتیپ هاور -->
+    <div id="chartTip"
+         class="hidden absolute z-10 -translate-x-1/2 -translate-y-full bg-gray-800 text-white text-[10px] rounded px-2 py-1 shadow">
+    </div>
+  </div>
+</div>
 
-            const svg = document.getElementById('chart');
-            const rect = () => svg.getBoundingClientRect();
-            const padding = { top: 12, right: 28, bottom: 24, left: 36 };
-            const mapRange = (v, a1, a2, b1, b2) => b1 + (v - a1) * (b2 - b1) / (a2 - a1);
+<style>
+  .draw{stroke-dasharray:var(--len);stroke-dashoffset:var(--len);animation:dash 1.4s ease-out forwards}
+  .draw.delay{animation-delay:.2s}
+  #xTicks span{opacity:0;transform:translateY(4px);transition:.4s ease}
+  #xTicks.ready span{opacity:1;transform:translateY(0)}
+  @keyframes dash{to{stroke-dashoffset:0}}
+</style>
 
-            function smoothPath(points) {
-              if (points.length < 2) return '';
-              const cp = (p0, p1, p2, t=0.25) => {
-                const d01 = Math.hypot(p1.x - p0.x, p1.y - p0.y);
-                const d12 = Math.hypot(p2.x - p1.x, p2.y - p1.y);
-                const fa = t * d01 / (d01 + d12 || 1);
-                const fb = t * d12 / (d01 + d12 || 1);
-                const p1a = { x: p1.x - fa * (p2.x - p0.x), y: p1.y - fa * (p2.y - p0.y) };
-                const p1b = { x: p1.x + fb * (p2.x - p0.x), y: p1.y + fb * (p2.y - p0.y) };
-                return [p1a, p1b];
-              };
-              let d = `M ${points[0].x},${points[0].y}`;
-              for (let i = 0; i < points.length - 1; i++) {
-                const p0 = points[i === 0 ? 0 : i - 1];
-                const p1 = points[i];
-                const p2 = points[i + 1];
-                const p3 = points[i + 2] || p2;
-                const [cp1] = cp(p0, p1, p2);
-                const [, cp2] = cp(p1, p2, p3);
-                d += ` C ${cp1.x},${cp1.y} ${cp2.x},${cp2.y} ${p2.x},${p2.y}`;
-              }
-              return d;
-            }
+<script>
+  const labels = ["حمل","ثور","جوزا","سرطان","اسد","سنبله","میزان","عقرب","قوس","جدی","دلو","حوت"];
+  const profit = [30,45,40,22,85,28,80,32,26,50,60,90];
+  const loss   = [60,55,70,78,65,62,58,54,52,50,46,40];
 
-            function animateStroke(pathEl, delay = 0) {
-              const len = pathEl.getTotalLength?.() || 0;
-              pathEl.style.setProperty('--len', len);
-              pathEl.classList.remove('draw', 'delay');
-              requestAnimationFrame(() => {
-                if (delay) pathEl.classList.add('delay');
-                pathEl.classList.add('draw');
-              });
-            }
+  const svg = document.getElementById('chart');
+  const ticks = document.getElementById('xTicks');
+  const tip = document.getElementById('chartTip');
 
-            function draw() {
-              svg.innerHTML = '';
-              const ticks = document.getElementById('xTicks');
-              ticks.classList.remove('ready');
-              ticks.innerHTML = '';
+  const padding = { top: 12, right: 28, bottom: 28, left: 36 };
+  const mapRange = (v, a1, a2, b1, b2) => b1 + (v - a1) * (b2 - b1) / (a2 - a1);
 
-              const { width, height } = rect();
-              svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
+  function smoothPath(points) {
+    if (points.length < 2) return '';
+    const cp = (p0, p1, p2, t=0.25) => {
+      const d01 = Math.hypot(p1.x - p0.x, p1.y - p0.y);
+      const d12 = Math.hypot(p2.x - p1.x, p2.y - p1.y);
+      const fa = t * d01 / (d01 + d12 || 1);
+      const fb = t * d12 / (d01 + d12 || 1);
+      const p1a = { x: p1.x - fa * (p2.x - p0.x), y: p1.y - fa * (p2.y - p0.y) };
+      const p1b = { x: p1.x + fb * (p2.x - p0.x), y: p1.y + fb * (p2.y - p0.y) };
+      return [p1a, p1b];
+    };
+    let d = `M ${points[0].x},${points[0].y}`;
+    for (let i = 0; i < points.length - 1; i++) {
+      const p0 = points[i === 0 ? 0 : i - 1];
+      const p1 = points[i];
+      const p2 = points[i + 1];
+      const p3 = points[i + 2] || p2;
+      const [cp1] = cp(p0, p1, p2);
+      const [, cp2] = cp(p1, p2, p3);
+      d += ` C ${cp1.x},${cp1.y} ${cp2.x},${cp2.y} ${p2.x},${p2.y}`;
+    }
+    return d;
+  }
 
-              const w = width  - padding.left - padding.right;
-              const h = height - padding.top  - padding.bottom;
+  function animateStroke(pathEl, delay = 0) {
+    const len = pathEl.getTotalLength?.() || 0;
+    pathEl.style.setProperty('--len', len);
+    pathEl.classList.remove('draw','delay');
+    requestAnimationFrame(() => {
+      if (delay) pathEl.classList.add('delay');
+      pathEl.classList.add('draw');
+    });
+  }
 
-              const minY = 0, maxY = 100;
-              const stepX = w / (labels.length - 1);
+  function draw() {
+    svg.innerHTML = '';
+    ticks.classList.remove('ready');
+    ticks.innerHTML = '';
 
-              // grid
-              const grid = 5;
-              for (let i = 0; i <= grid; i++) {
-                const y = padding.top + (h / grid) * i;
-                const line = document.createElementNS('http://www.w3.org/2000/svg','line');
-                line.setAttribute('x1', padding.left);
-                line.setAttribute('y1', y);
-                line.setAttribute('x2', padding.left + w);
-                line.setAttribute('y2', y);
-                line.setAttribute('stroke', 'rgba(0,0,0,0.06)');
-                svg.appendChild(line);
-              }
+    const { width, height } = svg.getBoundingClientRect();
+    svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
 
-              for (let v = 10; v <= 90; v += 10) {
-                const yPos = padding.top + (h - mapRange(v, minY, maxY, 0, h));
-                const txt = document.createElementNS('http://www.w3.org/2000/svg','text');
-                txt.setAttribute('x', padding.left - 6);
-                txt.setAttribute('y', yPos + 4);
-                txt.setAttribute('fill', '#6B7280');
-                txt.setAttribute('font-size', '12');
-                txt.setAttribute('text-anchor', 'end');
-                txt.textContent = v.toString();
-                svg.appendChild(txt);
-              }
+    const w = width  - padding.left - padding.right;
+    const h = height - padding.top  - padding.bottom;
 
-              const mapPoints = arr => arr.map((v, i) => ({
-                x: padding.left + stepX * i,
-                y: padding.top + (h - mapRange(v, minY, maxY, 0, h))
-              }));
-              const ptsProfit = mapPoints(profit);
-              const ptsLoss   = mapPoints(loss);
+    const minY = 0, maxY = 100;
+    const stepX = w / (labels.length - 1);
 
-              const pathLoss = document.createElementNS('http://www.w3.org/2000/svg','path');
-              pathLoss.setAttribute('d', smoothPath(ptsLoss));
-              pathLoss.setAttribute('fill', 'none');
-              pathLoss.setAttribute('stroke', '#9CA3AF');
-              pathLoss.setAttribute('stroke-width', '2');
-              svg.appendChild(pathLoss);
+    // grid
+    const grid = 5;
+    for (let i = 0; i <= grid; i++) {
+      const y = padding.top + (h / grid) * i;
+      const line = document.createElementNS('http://www.w3.org/2000/svg','line');
+      line.setAttribute('x1', padding.left);
+      line.setAttribute('y1', y);
+      line.setAttribute('x2', padding.left + w);
+      line.setAttribute('y2', y);
+      line.setAttribute('stroke', 'rgba(0,0,0,0.06)');
+      svg.appendChild(line);
+    }
 
-              const pathProfit = document.createElementNS('http://www.w3.org/2000/svg','path');
-              pathProfit.setAttribute('d', smoothPath(ptsProfit));
-              pathProfit.setAttribute('fill', 'none');
-              pathProfit.setAttribute('stroke', '#0EA5E9');
-              pathProfit.setAttribute('stroke-width', '3');
-              svg.appendChild(pathProfit);
+    // y ticks
+    for (let v = 10; v <= 90; v += 10) {
+      const yPos = padding.top + (h - mapRange(v, minY, maxY, 0, h));
+      const txt = document.createElementNS('http://www.w3.org/2000/svg','text');
+      txt.setAttribute('x', padding.left - 6);
+      txt.setAttribute('y', yPos + 4);
+      txt.setAttribute('fill', '#6B7280');
+      txt.setAttribute('font-size', '12');
+      txt.setAttribute('text-anchor', 'end');
+      txt.textContent = v.toString();
+      svg.appendChild(txt);
+    }
 
-              animateStroke(pathLoss, 0);
-              animateStroke(pathProfit, 200);
+    // map points
+    const mapPoints = arr => arr.map((v, i) => ({
+      x: padding.left + stepX * i,
+      y: padding.top + (h - mapRange(v, minY, maxY, 0, h))
+    }));
+    const ptsProfit = mapPoints(profit);
+    const ptsLoss   = mapPoints(loss);
 
-              labels.forEach(lb => {
-                const span = document.createElement('span');
-                span.textContent = lb;
-                ticks.appendChild(span);
-              });
-              requestAnimationFrame(() => ticks.classList.add('ready'));
-            }
+    // paths
+    const pathLoss = document.createElementNS('http://www.w3.org/2000/svg','path');
+    pathLoss.setAttribute('d', smoothPath(ptsLoss));
+    pathLoss.setAttribute('fill', 'none');
+    pathLoss.setAttribute('stroke', '#9CA3AF');
+    pathLoss.setAttribute('stroke-width', '2');
+    svg.appendChild(pathLoss);
 
-            draw();
-            let rAF;
-            window.addEventListener('resize', () => {
-              cancelAnimationFrame(rAF);
-              rAF = requestAnimationFrame(draw);
-            });
-          </script>
+    const pathProfit = document.createElementNS('http://www.w3.org/2000/svg','path');
+    pathProfit.setAttribute('d', smoothPath(ptsProfit));
+    pathProfit.setAttribute('fill', 'none');
+    pathProfit.setAttribute('stroke', '#0EA5E9');
+    pathProfit.setAttribute('stroke-width', '3');
+    svg.appendChild(pathProfit);
+
+    animateStroke(pathLoss, 0);
+    animateStroke(pathProfit, 200);
+
+    // x labels (فاصله کمتر)
+    labels.forEach(lb => {
+      const span = document.createElement('span');
+      span.textContent = lb;
+      ticks.appendChild(span);
+    });
+    requestAnimationFrame(() => ticks.classList.add('ready'));
+
+    // ---------- Hover Interactions ----------
+    // vertical guide line
+    const vline = document.createElementNS('http://www.w3.org/2000/svg','line');
+    vline.setAttribute('y1', padding.top);
+    vline.setAttribute('y2', padding.top + h);
+    vline.setAttribute('stroke', 'rgba(17,24,39,.25)'); // gray-900/25
+    vline.setAttribute('stroke-width', '1');
+    vline.setAttribute('visibility', 'hidden');
+    svg.appendChild(vline);
+
+    // focus dots
+    const dot = (color) => {
+      const c = document.createElementNS('http://www.w3.org/2000/svg','circle');
+      c.setAttribute('r', 4);
+      c.setAttribute('fill', '#fff');
+      c.setAttribute('stroke', color);
+      c.setAttribute('stroke-width', 2);
+      c.setAttribute('visibility', 'hidden');
+      svg.appendChild(c);
+      return c;
+    };
+    const dProfit = dot('#0EA5E9');
+    const dLoss   = dot('#9CA3AF');
+
+    const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+
+    svg.addEventListener('mousemove', (e) => {
+      const bbox = svg.getBoundingClientRect();
+      const mx = e.clientX - bbox.left;
+      const ix = Math.round(clamp((mx - padding.left) / stepX, 0, labels.length - 1)); // nearest index
+      const xp = padding.left + stepX * ix;
+
+      vline.setAttribute('x1', xp);
+      vline.setAttribute('x2', xp);
+      vline.setAttribute('visibility', 'visible');
+
+      const p1 = ptsProfit[ix];
+      const p2 = ptsLoss[ix];
+
+      dProfit.setAttribute('cx', p1.x); dProfit.setAttribute('cy', p1.y);
+      dLoss.setAttribute('cx', p2.x);   dLoss.setAttribute('cy', p2.y);
+      dProfit.setAttribute('visibility', 'visible');
+      dLoss.setAttribute('visibility', 'visible');
+
+      tip.textContent = `${labels[ix]} — مفاد ${profit[ix]} / ضرر ${loss[ix]}`;
+      tip.style.left = `${xp}px`;
+      tip.style.top  = `${Math.min(p1.y, p2.y) - 6}px`;
+      tip.classList.remove('hidden');
+    });
+
+    svg.addEventListener('mouseleave', () => {
+      vline.setAttribute('visibility', 'hidden');
+      dProfit.setAttribute('visibility', 'hidden');
+      dLoss.setAttribute('visibility', 'hidden');
+      tip.classList.add('hidden');
+    });
+  }
+
+  draw();
+  let rAF;
+  window.addEventListener('resize', () => {
+    cancelAnimationFrame(rAF);
+    rAF = requestAnimationFrame(draw);
+  });
+</script>
+
         </div>
 
         <!-- راست: گراف هفته‌ای + گراف ماهانه -->
         <div class="flex flex-col space-y-3">
 
           <!-- گراف هفته‌وار -->
-          <div class="bg-white rounded-2xl shadow-lg p-3 sm:p-4 max-w-full sm:max-w-md w-full flex flex-col overflow-hidden h-75 border border-gray-200">
+          <div class="bg-white rounded-2xl  p-3 sm:p-4 max-w-full sm:max-w-md w-full flex flex-col overflow-hidden h-75 shadow-xl border-[2px] border-gray-300 border-soild">
             <div class="flex items-center justify-between mb-3 sm:mb-4">
               <h2 class="text-base sm:text-lg font-bold">سفارشات</h2>
-              <!-- دکمه آبی مثل عکس -->
+          
               <button class="flex items-center gap-1 bg-blue-600 hover:bg-blue-700 text-white text-[10px] sm:text-xs rounded px-2 py-1 shadow-sm border border-blue-600">
                 هفته وار
                 <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -341,10 +413,10 @@
           </script>
 
           <!-- گراف سفارشات ماهانه (Pie) -->
-          <div class="bg-white rounded-2xl shadow-lg p-4 max-w-md w-full flex flex-col h-75 border border-gray-200">
+          <div class="bg-white rounded-2xl  p-4 max-w-md w-full flex flex-col h-75shadow-xl border-[2px] border-gray-300 border-soild">
             <div class="flex justify-between mb-4">
               <h2 class="text-lg font-bold">گراف سفارشات</h2>
-              <!-- دکمه آبی مثل عکس -->
+            
               <button class="flex items-center gap-1 bg-blue-600 hover:bg-blue-700 text-white text-xs rounded px-2 py-1 shadow-sm border border-blue-600">
                 ماهوار
                 <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
