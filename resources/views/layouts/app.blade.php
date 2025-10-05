@@ -10,7 +10,7 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
+8u
   @stack('head')
 </head>
 <body class="bg-gray-100 text-gray-900">
@@ -24,7 +24,7 @@
          class="fixed inset-0 z-30 bg-black/40 opacity-0 pointer-events-none transition-opacity duration-200 lg:hidden"></div>
 
     {{-- Main --}}
-    <div class="flex-1 flex flex-col min-w-0">
+    <div class="flex-1 flex flex-col min-w-0 mb-5">
 
       {{-- Navbar (Partial) --}}
       @include('partials.navbar')

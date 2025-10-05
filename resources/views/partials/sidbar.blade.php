@@ -4,8 +4,8 @@
 
   {{-- header --}}
 <div class="h-16 flex items-center justify-between border-gray-200">
-  <!-- لوگو + عنوان کنار هم -->
-  <div class="flex ">  <!-- فاصله بین عکس و متن -->
+  
+  <div class="flex "> 
     <img src="/img/Group 2.png" alt="badge" class="w-15 h-10" />
     
     <span class="text-gray-700 font-semibold">ادمین پنل</span>
@@ -73,12 +73,8 @@
       </button>
 
       <button data-section="reports" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
-        <!-- <img src="/img/note-2.png" class="w-5 h-5" alt="گزارشات" /> -->
-         <svg class="w-6 h-6 text-gray-800" viewBox="0 0 24 24" fill="none"
-     stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-  <rect x="3" y="6" width="12" height="15" rx="2"/>
-  <rect x="9" y="3" width="12" height="15" rx="2"/>
-  <path d="M12 8h7"/><path d="M12 12h7"/>
+        <img src="/img/note-2.png" class="w-5 h-5" alt="گزارشات" />
+         
 </svg>
 
         
@@ -112,21 +108,7 @@
         <span>نقشه ها</span>
       </button>
 
-      <button data-section="stats" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
-        <!-- <img src="/img/colorfilter.png" class="w-5 h-5" alt="ارقام" /> -->
-         <svg xmlns="http://www.w3.org/2000/svg"
-     width="24" height="24" viewBox="0 0 24 24"
-     fill="none" stroke="currentColor" stroke-width="2"
-     stroke-linecap="round" stroke-linejoin="round" aria-label="triangle-dots">
-  
-  <circle cx="12" cy="7" r="5"/>
-  
-  <circle cx="7" cy="16" r="5"/>
-  
-  <circle cx="17" cy="16" r="5"/>
-</svg>
-        <span>ارقام</span>
-      </button>
+     
 
       <button data-section="customers" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
         <!-- <img src="/img/profile.png" class="w-5 h-5" alt="مشتریان" /> -->
@@ -134,9 +116,9 @@
      width="24" height="24" viewBox="0 0 24 24"
      fill="none" stroke="currentColor" stroke-width="2"
      stroke-linecap="round" stroke-linejoin="round" aria-label="user-alt">
-  <!-- سر -->
+  
   <circle cx="12" cy="8" r="4"/>
-  <!-- بدن بیضی‌مانند -->
+
   <ellipse cx="12" cy="19" rx="7" ry="4"/>
 </svg>
         <span>مشتریان</span>
@@ -156,9 +138,9 @@
      width="24" height="24" viewBox="0 0 24 24"
      fill="none" stroke="currentColor" stroke-width="2"
      stroke-linecap="round" stroke-linejoin="round" aria-label="help">
-  <!-- دایره خالی -->
+  
   <circle cx="12" cy="12" r="10"/>
-  <!-- علامت تعجب داخل دایره -->
+  
   <line x1="12" y1="8" x2="12" y2="14"/>
   <circle cx="12" cy="17" r="1"/>
 </svg>
