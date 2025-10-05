@@ -1,11 +1,11 @@
 <aside id="sidebar"
-  class="fixed inset-y-0 right-0 z-40 w-64 bg-white border-l border-gray-200 transform translate-x-full transition-transform duration-200 ease-out
-         lg:static lg:translate-x-0 lg:flex lg:flex-col" aria-label="Sidebar">
+  class="fixed inset-y-0 right-0 z-40 w-56 bg-white border-l border-gray-200 transform translate-x-full transition-transform duration-200 ease-out
+         lg:static lg:translate-x-0 lg:flex lg:flex-col lg:w-60" aria-label="Sidebar">
 
   {{-- header --}}
-<div class="h-16 flex items-center justify-between border-gray-200">
-  <!-- لوگو + عنوان کنار هم -->
-  <div class="flex ">  <!-- فاصله بین عکس و متن -->
+<div class="h-16 flex items-center justify-between border-gray-300">
+  
+  <div class="flex "> 
     <img src="/img/Group 2.png" alt="badge" class="w-15 h-10" />
     
     <span class="text-gray-700 font-semibold">ادمین پنل</span>
@@ -37,17 +37,47 @@
       </button>
 
       <button data-section="orders" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
-        <img src="/img/Vector (1).png" class="w-5 h-5" alt="سفارشات" />
+        <!-- <img src="/img/Vector (1).png" class="w-5 h-5" alt="سفارشات" /> -->
+        <svg xmlns="http://www.w3.org/2000/svg"
+     width="24" height="24" viewBox="0 0 18 23"
+     fill="none" stroke="currentColor" stroke-width="1.5"
+     stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" aria-label="order-note">
+  <path d="M1 6V20C1 20.83 1.93998 21.3 2.59998 20.8L4.31 19.52C4.71 19.22 5.27 19.26 5.63 19.62L7.28998 21.29C7.67998 21.68 8.32002 21.68 8.71002 21.29L10.39 19.61C10.74 19.26 11.3 19.22 11.69 19.52L13.4 20.8C14.06 21.29 15 20.82 15 20V3C15 1.9 15.9 1 17 1H6H5C2 1 1 2.79 1 5V6Z"/>
+</svg>
+
         <span>سفارشات</span>
       </button>
 
       <button data-section="admins" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
-        <img src="/img/people.png" class="w-5 h-5" alt="ادمین‌ها" />
+        <!-- <img src="/img/people.png" class="w-5 h-5" alt="ادمین‌ها" /> -->
+         <svg xmlns="http://www.w3.org/2000/svg"
+     width="24" height="24" viewBox="0 0 24 24"
+     fill="none" stroke="currentColor" stroke-width="2"
+     stroke-linecap="round" stroke-linejoin="round" aria-label="users-triangle">
+  <!-- سر بالا چپ -->
+  <circle cx="7" cy="8" r="2.5"/>
+  <!-- بدن بالا چپ -->
+  <ellipse cx="7" cy="14" rx="3" ry="2"/>
+  
+  <!-- سر بالا راست -->
+  <circle cx="17" cy="8" r="2.5"/>
+  <!-- بدن بالا راست -->
+  <ellipse cx="17" cy="14" rx="3" ry="2"/>
+  
+  <!-- سر پایین وسط -->
+  <circle cx="12" cy="16" r="3"/>
+  <!-- بدن پایین وسط -->
+  <ellipse cx="12" cy="21" rx="4" ry="2.5"/>
+</svg>
         <span>ادمین ها</span>
       </button>
 
       <button data-section="reports" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
         <img src="/img/note-2.png" class="w-5 h-5" alt="گزارشات" />
+         
+</svg>
+
+        
         <span>گزارشات</span>
       </button>
 
@@ -66,17 +96,31 @@
       </button>
 
       <button data-section="maps" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
-        <img src="/img/location.png" class="w-5 h-5" alt="نقشه‌ها" />
+        <!-- <img src="/img/location.png" class="w-5 h-5 hover:bg-blue-700" alt="نقشه‌ها" /> -->
+         <svg xmlns="http://www.w3.org/2000/svg"
+     width="24" height="24" viewBox="0 0 24 24"
+     fill="none" stroke="currentColor" stroke-width="2"
+     stroke-linecap="round" stroke-linejoin="round" aria-label="map-pin">
+  <path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1 1 18 0z"/>
+  <circle cx="12" cy="10" r="3"/>
+</svg>
+         
         <span>نقشه ها</span>
       </button>
 
-      <button data-section="stats" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
-        <img src="/img/colorfilter.png" class="w-5 h-5" alt="ارقام" />
-        <span>ارقام</span>
-      </button>
+     
 
       <button data-section="customers" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
-        <img src="/img/profile.png" class="w-5 h-5" alt="مشتریان" />
+        <!-- <img src="/img/profile.png" class="w-5 h-5" alt="مشتریان" /> -->
+         <svg xmlns="http://www.w3.org/2000/svg"
+     width="24" height="24" viewBox="0 0 24 24"
+     fill="none" stroke="currentColor" stroke-width="2"
+     stroke-linecap="round" stroke-linejoin="round" aria-label="user-alt">
+  
+  <circle cx="12" cy="8" r="4"/>
+
+  <ellipse cx="12" cy="19" rx="7" ry="4"/>
+</svg>
         <span>مشتریان</span>
       </button>
     </div>
@@ -89,7 +133,17 @@
       </button>
 
       <button data-section="help" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
-        <img src="/img/info-circle.png" class="w-5 h-5" alt="کمک" />
+        <!-- <img src="/img/info-circle.png" class="w-5 h-5" alt="کمک" /> -->
+         <svg xmlns="http://www.w3.org/2000/svg"
+     width="24" height="24" viewBox="0 0 24 24"
+     fill="none" stroke="currentColor" stroke-width="2"
+     stroke-linecap="round" stroke-linejoin="round" aria-label="help">
+  
+  <circle cx="12" cy="12" r="10"/>
+  
+  <line x1="12" y1="8" x2="12" y2="14"/>
+  <circle cx="12" cy="17" r="1"/>
+</svg>
         <span>کمک</span>
       </button>
 
