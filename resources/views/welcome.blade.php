@@ -10,90 +10,93 @@
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-3">
 
         
-        <div class="lg:col-span-2 space-y-8">
+        <div class="lg:col-span-2 space-y-6">
 
           <!-- کارت‌ها -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3  ">
-            <div class="bg-white p-6 rounded-lg shadow-xl border-[2px] border-gray-300 border-soild ">
-              <h2 class="text-2xl font-bold mt-2">872803.8؋</h2>
-              <p class="text-lg text-gray-800">درآمد امروز</p>
-              <p class="inline-flex text-xs font-medium text-green-500 bg-green-100 rounded py-1 px-2">12.5%+</p>
-            </div>
+         <!-- کارت‌ها -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3  ">
+  <div class="bg-white p-8 rounded-lg border-[2px] border-gray-300 border-soild ">
+    <h2 class="text-2xl font-bold mt-2">872803.8؋</h2>
+    <p class="text-lg text-gray-800">درآمد امروز</p>
+    <p class="inline-flex text-xs font-medium text-green-500 bg-green-100 rounded py-1 px-2">12.5%+</p>
+  </div>
 
-            <div class="bg-white p-6 rounded-lg shadow-xl border-[2px] border-gray-300 border-soild">
-              <h2 class="text-2xl font-bold mt-2">929839؋</h2>
-              <p class="text-lg text-gray-800">کل سفارشات</p>
-              <p class="inline-flex text-xs font-medium text-red-500 bg-red-100 rounded py-1 px-2">4.1%-</p>
-            </div>
+  <div class="bg-white p-8 rounded-lg border-[2px] border-gray-300 border-soild">
+    <h2 class="text-2xl font-bold mt-2">929839؋</h2>
+    <p class="text-lg text-gray-800">کل سفارشات</p>
+    <p class="inline-flex text-xs font-medium text-red-500 bg-red-100 rounded py-1 px-2">4.1%-</p>
+  </div>
 
-            <div class="bg-white p-6 rounded-lg shadow-xl border-[2px] border-gray-300 border-soild">
-              <h2 class="text-2xl font-bold mt-2">9728888؋</h2>
-              <p class="text-lg text-gray-800">کل درآمد</p>
-              <p class="inline-flex text-xs font-medium text-green-500 bg-green-100 rounded py-1 px-2">7.5%+</p>
-            </div>
+  <div class="bg-white p-8 rounded-lg border-[2px] border-gray-300 border-soild">
+    <h2 class="text-2xl font-bold mt-2">9728888؋</h2>
+    <p class="text-lg text-gray-800">کل درآمد</p>
+    <p class="inline-flex text-xs font-medium text-green-500 bg-green-100 rounded py-1 px-2">7.5%+</p>
+  </div>
 
-            <div class="bg-white p-6 rounded-lg shadow-xl border-[2px] border-gray-300 border-soild">
-              <h2 class="text-2xl font-bold mt-2">1293823.12؋</h2>
-              <p class="text-lg text-gray-800">کل مفاد</p>
-              <p class="inline-flex text-xs font-medium text-green-500 bg-green-100 rounded py-1 px-2">7.5%+</p>
-            </div>
+  <div class="bg-white p-8 rounded-lg border-[2px] border-gray-300 border-soild">
+    <h2 class="text-2xl font-bold mt-2">1293823.12؋</h2>
+    <p class="text-lg text-gray-800">کل مفاد</p>
+    <p class="inline-flex text-xs font-medium text-green-500 bg-green-100 rounded py-1 px-2">7.5%+</p>
+  </div>
 
-            <div class="stat-card bg-white rounded-lg  p-6 shadow-xl border-[2px] border-gray-300 border-soild" data-change="0">
-              <div class="flex items-center gap-2">
-                <p class="value text-xl font-bold">15</p>
-                <img src="/img/note-2.png" alt="complaints" class="h-5 w-5 rounded-full border border-gray-300" />
-              </div>
-              <h3 class="text-gray-500 text-sm mb-2 text-right">شکایات</h3>
-              <div class="bg-red-200 flex justify-between rounded-lg">
-                <div class="flex flex-row-reverse -space-x-2">
-                  <img src="/img/testi_01 2.png" alt="driver1" class="w-8 h-8 rounded-full border border-gray-300" />
-                  <img src="/img/testi_02 2.png" alt="driver2" class="w-8 h-8 rounded-full border border-gray-300" />
-                  <img src="/img/testi_03 2.png" alt="driver3" class="w-8 h-8 rounded-full border border-gray-300" />
-                </div>
-                <svg class="w-5 h-5 text-red-700 ms-2 mt-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                </svg>
-              </div>
-            </div>
+  <div class="stat-card bg-white rounded-lg p-8 border-[2px] border-gray-300 border-soild" data-change="0">
+    <div class="flex items-center gap-2">
+      <p class="value text-xl font-bold">15</p>
+      <img src="/img/note-2.png" alt="complaints" class="h-5 w-5 rounded-full border border-gray-300" />
+    </div>
+    <h3 class="text-gray-500 text-sm mb-2 text-right">شکایات</h3>
+    <div class="inline-flex bg-red-200 rounded-lg overflow-hidden">
+      <div class="flex flex-row-reverse -space-x-2">
+        <img src="/img/testi_01 2.png" alt="driver1" class="w-8 h-8 rounded-full border border-gray-300" />
+        <img src="/img/testi_02 2.png" alt="driver2" class="w-8 h-8 rounded-full border border-gray-300" />
+        <img src="/img/testi_03 2.png" alt="driver3" class="w-8 h-8 rounded-full border border-gray-300" />
+      </div>
+      <svg class="w-5 h-5 text-red-700 ms-2 self-end" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+      </svg>
+    </div>
+  </div>
 
-            <div class="stat-card bg-white rounded-lg  p-6 shadow-xl border-[2px] border-gray-300 border-soild" data-change="0">
-              <div class="flex items-center gap-2">
-                <p class="value text-xl font-bold">200</p>
-                <img src="/img/people.png" alt="drivers" class="h-5 w-5 rounded-full border border-gray-300" />
-              </div>
-              <h3 class="text-gray-500 text-sm mb-2">رانندگان فعال</h3>
-              <div class="bg-blue-200 flex justify-between rounded-lg">
-                <div class="flex flex-row-reverse -space-x-2">
-                  <img src="/img/testi_01 2.png" alt="driver1" class="w-8 h-8 rounded-full border border-gray-300" />
-                  <img src="/img/testi_02 2.png" alt="driver2" class="w-8 h-8 rounded-full border border-gray-300" />
-                  <img src="/img/testi_03 2.png" alt="driver3" class="w-8 h-8 rounded-full border border-gray-300" />
-                </div>
-                <svg class="w-5 h-5 text-blue-700 ms-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                </svg>
-              </div>
-            </div>
-          </div>
+  <div class="stat-card bg-white rounded-lg p-8 border-[2px] border-gray-300 border-soild" data-change="0">
+    <div class="flex items-center gap-2">
+      <p class="value text-xl font-bold">200</p>
+      <img src="/img/people.png" alt="drivers" class="h-5 w-5 rounded-full border border-gray-300" />
+    </div>
+    <h3 class="text-gray-500 text-sm mb-2">رانندگان فعال</h3>
+    <div class="inline-flex bg-blue-200 rounded-lg overflow-hidden">
+      <div class="flex flex-row-reverse -space-x-2">
+        <img src="/img/testi_01 2.png" alt="driver1" class="w-8 h-8 rounded-full border border-gray-300" />
+        <img src="/img/testi_02 2.png" alt="driver2" class="w-8 h-8 rounded-full border border-gray-300" />
+        <img src="/img/testi_03 2.png" alt="driver3" class="w-8 h-8 rounded-full border border-gray-300" />
+      </div>
+      <svg class="w-5 h-5 text-blue-700 ms-2 self-end" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+      </svg>
+    </div>
+  </div>
+</div>
 
+
+            
           <!-- گراف مفاد و ضرر (Line) -->
          
-<div class="max-w-4xl bg-white rounded-2xl  p-4 mt-2 mb-2 shadow-lg border-[2px] border-gray-300 border-soild">
+<div class="max-w-4xl bg-white rounded-2xl  p-4  mb-2  border-[2px] border-gray-300 border-soild">
   <div class="flex items-center justify-between mb-5">
     <h2 class="font-semibold text-gray-800">گراف مفاد و ضرر</h2>
     <div class="flex items-center gap-5 text-sm text-gray-700">
-      <span class="flex items-center gap-2">
+      <button id="legendProfit" type="button" class="flex items-center gap-2">
         <span class="inline-block w-3 h-3 rounded bg-sky-500"></span> مفاد
-      </span>
-      <span class="flex items-center gap-2">
+      </button>
+      <button id="legendLoss" type="button" class="flex items-center gap-2">
         <span class="inline-block w-3 h-3 rounded bg-gray-400"></span> ضرر
-      </span>
+      </button>
     </div>
   </div>
 
   <div class="relative">
     <svg id="chart" class="w-full h-80"></svg>
 
-    <!-- برچسب‌های ماه: فاصله کمتر و فونت ریزتر -->
+    <!-- برچسب‌های ماه -->
     <div id="xTicks"
          class="absolute bottom-1 left-0 right-0 px-1 flex justify-between text-[11px] tracking-tight text-gray-500"></div>
 
@@ -127,6 +130,7 @@
   #xTicks span{opacity:0;transform:translateY(4px);transition:.4s ease}
   #xTicks.ready span{opacity:1;transform:translateY(0)}
   @keyframes dash{to{stroke-dashoffset:0}}
+  .legend-off{opacity:.45}
 </style>
 
 <script>
@@ -134,12 +138,18 @@
   const profit = [30,45,40,22,85,28,80,32,26,50,60,90];
   const loss   = [60,55,70,78,65,62,58,54,52,50,46,40];
 
-  const svg = document.getElementById('chart');
+  const svg   = document.getElementById('chart');
   const ticks = document.getElementById('xTicks');
-  const tip = document.getElementById('chartTip');
+  const tip   = document.getElementById('chartTip');
 
   const padding = { top: 12, right: 28, bottom: 28, left: 36 };
-  const mapRange = (v, a1, a2, b1, b2) => b1 + (v - a1) * (b2 - b1) / (a2 - a1);
+  const extraX  = 30; // کاهش فاصله افقی بین ماه‌ها (نقاط به هم نزدیک‌تر می‌شوند)
+  let showProfit = true, showLoss = true;
+
+  const $legendProfit = document.getElementById('legendProfit');
+  const $legendLoss   = document.getElementById('legendLoss');
+
+  function mapRange(v, a1, a2, b1, b2) { return b1 + (v - a1) * (b2 - b1) / (a2 - a1); }
 
   function smoothPath(points) {
     if (points.length < 2) return '';
@@ -175,6 +185,8 @@
     });
   }
 
+  let pathLoss, pathProfit, dProfit, dLoss, vline, ptsProfit, ptsLoss, stepX, xStart, h;
+
   function draw() {
     svg.innerHTML = '';
     ticks.classList.remove('ready');
@@ -184,10 +196,14 @@
     svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
 
     const w = width  - padding.left - padding.right;
-    const h = height - padding.top  - padding.bottom;
+    h = height - padding.top  - padding.bottom;
 
     const minY = 0, maxY = 100;
-    const stepX = w / (labels.length - 1);
+
+    // ناحیه ترسیم فشرده‌تر برای کاهش فاصله بین ماه‌ها
+    xStart = padding.left + extraX;
+    const xEnd = padding.left + w - extraX;
+    stepX = (xEnd - xStart) / (labels.length - 1);
 
     // grid
     const grid = 5;
@@ -217,31 +233,39 @@
 
     // map points
     const mapPoints = arr => arr.map((v, i) => ({
-      x: padding.left + stepX * i,
+      x: xStart + stepX * i,
       y: padding.top + (h - mapRange(v, minY, maxY, 0, h))
     }));
-    const ptsProfit = mapPoints(profit);
-    const ptsLoss   = mapPoints(loss);
+    ptsProfit = mapPoints(profit);
+    ptsLoss   = mapPoints(loss);
 
     // paths
-    const pathLoss = document.createElementNS('http://www.w3.org/2000/svg','path');
+    pathLoss = document.createElementNS('http://www.w3.org/2000/svg','path');
     pathLoss.setAttribute('d', smoothPath(ptsLoss));
     pathLoss.setAttribute('fill', 'none');
     pathLoss.setAttribute('stroke', '#9CA3AF');
     pathLoss.setAttribute('stroke-width', '2');
     svg.appendChild(pathLoss);
 
-    const pathProfit = document.createElementNS('http://www.w3.org/2000/svg','path');
+    pathProfit = document.createElementNS('http://www.w3.org/2000/svg','path');
     pathProfit.setAttribute('d', smoothPath(ptsProfit));
     pathProfit.setAttribute('fill', 'none');
     pathProfit.setAttribute('stroke', '#0EA5E9');
     pathProfit.setAttribute('stroke-width', '3');
     svg.appendChild(pathProfit);
 
+    // اعمال نمایش/عدم نمایش بر اساس وضعیت
+    pathProfit.style.visibility = showProfit ? 'visible' : 'hidden';
+    pathLoss.style.visibility   = showLoss   ? 'visible' : 'hidden';
+
     animateStroke(pathLoss, 0);
     animateStroke(pathProfit, 200);
 
-    // x labels (فاصله کمتر)
+    // x labels (هماهنگ با ناحیه‌ی فشرده)
+    // همزمان کناره‌ها را با ناحیه‌ی ترسیم هم‌راستا می‌کنیم تا فاصله کمتر شود
+    ticks.style.left  = (xStart) + 'px';
+    ticks.style.right = (width - (padding.left + w - extraX)) + 'px';
+
     labels.forEach(lb => {
       const span = document.createElement('span');
       span.textContent = lb;
@@ -251,7 +275,7 @@
 
     // ---------- Hover Interactions ----------
     // vertical guide line
-    const vline = document.createElementNS('http://www.w3.org/2000/svg','line');
+    vline = document.createElementNS('http://www.w3.org/2000/svg','line');
     vline.setAttribute('y1', padding.top);
     vline.setAttribute('y2', padding.top + h);
     vline.setAttribute('stroke', 'rgba(17,24,39,.25)'); // gray-900/25
@@ -270,16 +294,16 @@
       svg.appendChild(c);
       return c;
     };
-    const dProfit = dot('#0EA5E9');
-    const dLoss   = dot('#9CA3AF');
+    dProfit = dot('#0EA5E9');
+    dLoss   = dot('#9CA3AF');
 
     const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 
     svg.addEventListener('mousemove', (e) => {
       const bbox = svg.getBoundingClientRect();
       const mx = e.clientX - bbox.left;
-      const ix = Math.round(clamp((mx - padding.left) / stepX, 0, labels.length - 1)); // nearest index
-      const xp = padding.left + stepX * ix;
+      const ix = Math.round(clamp((mx - xStart) / stepX, 0, labels.length - 1)); // نزدیک‌ترین اندیس
+      const xp = xStart + stepX * ix;
 
       vline.setAttribute('x1', xp);
       vline.setAttribute('x2', xp);
@@ -288,15 +312,19 @@
       const p1 = ptsProfit[ix];
       const p2 = ptsLoss[ix];
 
-      dProfit.setAttribute('cx', p1.x); dProfit.setAttribute('cy', p1.y);
-      dLoss.setAttribute('cx', p2.x);   dLoss.setAttribute('cy', p2.y);
-      dProfit.setAttribute('visibility', 'visible');
-      dLoss.setAttribute('visibility', 'visible');
+      if (showProfit) { dProfit.setAttribute('cx', p1.x); dProfit.setAttribute('cy', p1.y); dProfit.setAttribute('visibility', 'visible'); }
+      else { dProfit.setAttribute('visibility', 'hidden'); }
 
-      tip.textContent = `${labels[ix]} — مفاد ${profit[ix]} / ضرر ${loss[ix]}`;
+      if (showLoss)   { dLoss.setAttribute('cx', p2.x);   dLoss.setAttribute('cy', p2.y);   dLoss.setAttribute('visibility', 'visible'); }
+      else { dLoss.setAttribute('visibility', 'hidden'); }
+
+      const parts = [];
+      if (showProfit) parts.push(`مفاد ${profit[ix]}`);
+      if (showLoss)   parts.push(`ضرر ${loss[ix]}`);
+      tip.textContent = `${labels[ix]} — ${parts.join(' / ')}`;
       tip.style.left = `${xp}px`;
-      tip.style.top  = `${Math.min(p1.y, p2.y) - 6}px`;
-      tip.classList.remove('hidden');
+      tip.style.top  = `${Math.min(showProfit ? p1.y : Infinity, showLoss ? p2.y : Infinity) - 6}px`;
+      tip.classList.toggle('hidden', parts.length === 0);
     });
 
     svg.addEventListener('mouseleave', () => {
@@ -307,7 +335,32 @@
     });
   }
 
+  // رویدادهای کلیک برای نمایش/مخفی‌سازی سری‌ها
+  function refreshLegendStyles() {
+    $legendProfit.classList.toggle('legend-off', !showProfit);
+    $legendLoss.classList.toggle('legend-off',   !showLoss);
+  }
+
+  $legendProfit.addEventListener('click', () => {
+    showProfit = !showProfit;
+    refreshLegendStyles();
+    // فقط دیداری را تغییر می‌دهیم، نیازی به بازترسیم کامل نیست
+    if (pathProfit) pathProfit.style.visibility = showProfit ? 'visible' : 'hidden';
+    if (dProfit)    dProfit.setAttribute('visibility', showProfit ? 'visible' : 'hidden');
+    tip.classList.add('hidden');
+  });
+
+  $legendLoss.addEventListener('click', () => {
+    showLoss = !showLoss;
+    refreshLegendStyles();
+    if (pathLoss) pathLoss.style.visibility = showLoss ? 'visible' : 'hidden';
+    if (dLoss)    dLoss.setAttribute('visibility', showLoss ? 'visible' : 'hidden');
+    tip.classList.add('hidden');
+  });
+
   draw();
+  refreshLegendStyles();
+
   let rAF;
   window.addEventListener('resize', () => {
     cancelAnimationFrame(rAF);
@@ -321,7 +374,7 @@
         <div class="flex flex-col space-y-3">
 
           <!-- گراف هفته‌وار -->
-          <div class="bg-white rounded-2xl  p-3 sm:p-4 max-w-full sm:max-w-md w-full flex flex-col overflow-hidden h-75 shadow-xl border-[2px] border-gray-300 border-soild">
+          <div class="bg-white rounded-2xl  p-3 sm:p-4 max-w-full sm:max-w-md w-full flex flex-col overflow-hidden h-75  border-[2px] border-gray-300 border-soild">
             <div class="flex items-center justify-between mb-3 sm:mb-4">
               <h2 class="text-base sm:text-lg font-bold">سفارشات</h2>
           
