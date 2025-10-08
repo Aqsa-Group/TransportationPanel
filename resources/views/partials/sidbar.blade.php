@@ -110,7 +110,30 @@
         <span>مشتریان</span>  
       </button>
 
+<<<<<<< HEAD
 
+=======
+      <button    data-section="maps" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
+        <img src="/img/location.png" class="w-5 h-5" alt="نقشه‌ها" />
+        <span>نقشه ها</span>
+      </button>
+      <!-- <button type="button" onclick="window.location.href='{{ url('/orders-Map') }}'" data-section="maps" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
+    <img src="/img/location.png" class="w-5 h-5" alt="نقشه‌ها" />
+    <span>نقشه ها</span>
+</button> -->
+
+   
+
+      <button  data-section="stats" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
+        <img src="/img/colorfilter.png" class="w-5 h-5" alt="ارقام" />
+        <span>ارقام</span>
+      </button>
+
+      <button data-section="customers" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
+        <img src="/img/profile.png" class="w-5 h-5" alt="مشتریان" />
+        <span>مشتریان</span>
+      </button>
+>>>>>>> 2bbcc8f (loginPage)
     </div>
 
     {{-- پایین --}}
