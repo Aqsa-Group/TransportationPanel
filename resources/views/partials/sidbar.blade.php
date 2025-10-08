@@ -36,7 +36,7 @@
         <span>داشبورد</span>
       </button>
 
-      <button data-section="orders" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
+      <button  onclick="window.location.href='{{ url('/orders-Page') }}'" data-section="orders" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
         <img src="/img/Vector (1).png" class="w-5 h-5" alt="سفارشات" />
         <span>سفارشات</span>
       </button>
@@ -65,12 +65,18 @@
         <span>رانندگان</span>
       </button>
 
-      <button data-section="maps" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
+      <button    data-section="maps" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
         <img src="/img/location.png" class="w-5 h-5" alt="نقشه‌ها" />
         <span>نقشه ها</span>
       </button>
+      <!-- <button type="button" onclick="window.location.href='{{ url('/orders-Map') }}'" data-section="maps" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
+    <img src="/img/location.png" class="w-5 h-5" alt="نقشه‌ها" />
+    <span>نقشه ها</span>
+</button> -->
 
-      <button data-section="stats" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
+   
+
+      <button  data-section="stats" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
         <img src="/img/colorfilter.png" class="w-5 h-5" alt="ارقام" />
         <span>ارقام</span>
       </button>

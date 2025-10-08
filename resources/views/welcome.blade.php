@@ -66,7 +66,7 @@
 
 
 
-      <div class="stat-card bg-white rounded-lg shadow p-6" data-change="0">
+   <div class="stat-card bg-white rounded-lg shadow p-6" data-change="0">
   <div class="flex items-center  gap-2">
     <p class="value text-xl font-bold">200</p>
     <img src="/img/people.png" alt="complaints" class="h-5 w-5 rounded-full border border-gray-300" />
