@@ -165,10 +165,6 @@
 >
   ورود
 </button>
-            <!-- ثبت نام -->
-   <div class="text-sm text-gray-700 mt-0 text-center  underline decoration-dotted  underline-offset-8" style="text-decoration-color: #006AFF;">
-  اگر عضو نیستید <a href="#" class="text-[#0B35CC] hover:underline">ثبت نام </a>کنید
-</div>
 
 
           </form>
