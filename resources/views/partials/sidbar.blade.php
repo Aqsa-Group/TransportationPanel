@@ -36,6 +36,10 @@
         <span>داشبورد</span>
       </button>
 
+
+      <button  onclick="window.location.href='{{ url('/orders-Page') }}'" data-section="orders" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
+        <img src="/img/Vector (1).png" class="w-5 h-5" alt="سفارشات" />
+
       <button data-section="orders" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
         <!-- <img src="/img/Vector (1).png" class="w-5 h-5" alt="سفارشات" /> -->
         <svg xmlns="http://www.w3.org/2000/svg"
@@ -44,6 +48,7 @@
      stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" aria-label="order-note">
   <path d="M1 6V20C1 20.83 1.93998 21.3 2.59998 20.8L4.31 19.52C4.71 19.22 5.27 19.26 5.63 19.62L7.28998 21.29C7.67998 21.68 8.32002 21.68 8.71002 21.29L10.39 19.61C10.74 19.26 11.3 19.22 11.69 19.52L13.4 20.8C14.06 21.29 15 20.82 15 20V3C15 1.9 15.9 1 17 1H6H5C2 1 1 2.79 1 5V6Z"/>
 </svg>
+
 
         <span>سفارشات</span>
       </button>
@@ -95,6 +100,10 @@
         <span>رانندگان</span>
       </button>
 
+
+      <button    data-section="maps" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
+        <img src="/img/location.png" class="w-5 h-5" alt="نقشه‌ها" />
+
       <button data-section="maps" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
         <!-- <img src="/img/location.png" class="w-5 h-5 hover:bg-blue-700" alt="نقشه‌ها" /> -->
          <svg xmlns="http://www.w3.org/2000/svg"
@@ -104,11 +113,22 @@
   <path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1 1 18 0z"/>
   <circle cx="12" cy="10" r="3"/>
 </svg>
-         
+
         <span>نقشه ها</span>
       </button>
+      <!-- <button type="button" onclick="window.location.href='{{ url('/orders-Map') }}'" data-section="maps" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
+    <img src="/img/location.png" class="w-5 h-5" alt="نقشه‌ها" />
+    <span>نقشه ها</span>
+</button> -->
 
-     
+
+   
+
+      <button  data-section="stats" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
+        <img src="/img/colorfilter.png" class="w-5 h-5" alt="ارقام" />
+        <span>ارقام</span>
+      </button>
+
 
       <button data-section="customers" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
         <!-- <img src="/img/profile.png" class="w-5 h-5" alt="مشتریان" /> -->
