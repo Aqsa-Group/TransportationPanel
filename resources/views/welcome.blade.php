@@ -97,9 +97,26 @@
     <div id="xTicks"
          class="absolute bottom-1 left-0 right-0 px-1 flex justify-between text-[11px] tracking-tight text-gray-500"></div>
 
+
+   <div class="stat-card bg-white rounded-lg shadow p-6" data-change="0">
+  <div class="flex items-center  gap-2">
+    <p class="value text-xl font-bold">200</p>
+    <img src="/img/people.png" alt="complaints" class="h-5 w-5 rounded-full border border-gray-300" />
+  </div>
+
+  <h3 class="text-gray-500 text-sm mb-2">رانندگان فعال</h3>
+
+  <div class="bg-purple-200 flex  justify-end p-2 rounded-xl">
+    
+    <div class="flex flex-row-reverse -space-x-2">
+      <img src="/img/testi_01 2.png" alt="driver1" class="w-8 h-8 rounded-full border border-gray-300" />
+      <img src="/img/testi_02 2.png" alt="driver2" class="w-8 h-8 rounded-full border border-gray-300" />
+      <img src="/img/testi_03 2.png" alt="driver3" class="w-8 h-8 rounded-full border border-gray-300" />
+
     <!-- تولتیپ هاور -->
     <div id="chartTip"
          class="hidden absolute z-10 -translate-x-1/2 -translate-y-full bg-gray-800 text-white text-[10px] rounded px-2 py-1 shadow">
+
     </div>
   </div>
 </div>
