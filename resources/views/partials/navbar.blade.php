@@ -73,7 +73,6 @@
   </div>
 </header>
 
-
 <!-- JS -->
 <script>
   const profileBtn = document.getElementById("profileButton");
@@ -90,5 +89,3 @@
     }
   });
 </script>
-
-
