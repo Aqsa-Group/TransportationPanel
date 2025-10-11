@@ -13,7 +13,7 @@
         <div class="lg:col-span-2 space-y-6">
 
           <!-- کارت‌ها -->
-         <!-- کارت‌ها -->
+
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3  ">
   <div class="bg-white p-8 rounded-lg border-[2px] border-gray-300 border-soild ">
     <h2 class="text-2xl font-bold mt-2">872803.8؋</h2>
@@ -100,26 +100,9 @@
     <div id="xTicks"
          class="absolute bottom-1 left-0 right-0 px-1 flex justify-between text-[11px] tracking-tight text-gray-500"></div>
 
-
-   <div class="stat-card bg-white rounded-lg shadow p-6" data-change="0">
-  <div class="flex items-center  gap-2">
-    <p class="value text-xl font-bold">200</p>
-    <img src="/img/people.png" alt="complaints" class="h-5 w-5 rounded-full border border-gray-300" />
-  </div>
-
-  <h3 class="text-gray-500 text-sm mb-2">رانندگان فعال</h3>
-
-  <div class="bg-purple-200 flex  justify-end p-2 rounded-xl">
-    
-    <div class="flex flex-row-reverse -space-x-2">
-      <img src="/img/testi_01 2.png" alt="driver1" class="w-8 h-8 rounded-full border border-gray-300" />
-      <img src="/img/testi_02 2.png" alt="driver2" class="w-8 h-8 rounded-full border border-gray-300" />
-      <img src="/img/testi_03 2.png" alt="driver3" class="w-8 h-8 rounded-full border border-gray-300" />
-
     <!-- تولتیپ هاور -->
     <div id="chartTip"
          class="hidden absolute z-10 -translate-x-1/2 -translate-y-full bg-gray-800 text-white text-[10px] rounded px-2 py-1 shadow">
-
     </div>
   </div>
 </div>
@@ -143,7 +126,7 @@
   const tip   = document.getElementById('chartTip');
 
   const padding = { top: 12, right: 28, bottom: 28, left: 36 };
-  const extraX  = 30; // کاهش فاصله افقی بین ماه‌ها (نقاط به هم نزدیک‌تر می‌شوند)
+  const extraX  = 30; 
   let showProfit = true, showLoss = true;
 
   const $legendProfit = document.getElementById('legendProfit');
@@ -200,12 +183,10 @@
 
     const minY = 0, maxY = 100;
 
-    // ناحیه ترسیم فشرده‌تر برای کاهش فاصله بین ماه‌ها
+    
     xStart = padding.left + extraX;
     const xEnd = padding.left + w - extraX;
     stepX = (xEnd - xStart) / (labels.length - 1);
-
-    // grid
     const grid = 5;
     for (let i = 0; i <= grid; i++) {
       const y = padding.top + (h / grid) * i;
@@ -218,7 +199,7 @@
       svg.appendChild(line);
     }
 
-    // y ticks
+    
     for (let v = 10; v <= 90; v += 10) {
       const yPos = padding.top + (h - mapRange(v, minY, maxY, 0, h));
       const txt = document.createElementNS('http://www.w3.org/2000/svg','text');
@@ -261,8 +242,7 @@
     animateStroke(pathLoss, 0);
     animateStroke(pathProfit, 200);
 
-    // x labels (هماهنگ با ناحیه‌ی فشرده)
-    // همزمان کناره‌ها را با ناحیه‌ی ترسیم هم‌راستا می‌کنیم تا فاصله کمتر شود
+   
     ticks.style.left  = (xStart) + 'px';
     ticks.style.right = (width - (padding.left + w - extraX)) + 'px';
 
@@ -273,8 +253,7 @@
     });
     requestAnimationFrame(() => ticks.classList.add('ready'));
 
-    // ---------- Hover Interactions ----------
-    // vertical guide line
+    
     vline = document.createElementNS('http://www.w3.org/2000/svg','line');
     vline.setAttribute('y1', padding.top);
     vline.setAttribute('y2', padding.top + h);
@@ -302,7 +281,7 @@
     svg.addEventListener('mousemove', (e) => {
       const bbox = svg.getBoundingClientRect();
       const mx = e.clientX - bbox.left;
-      const ix = Math.round(clamp((mx - xStart) / stepX, 0, labels.length - 1)); // نزدیک‌ترین اندیس
+      const ix = Math.round(clamp((mx - xStart) / stepX, 0, labels.length - 1)); 
       const xp = xStart + stepX * ix;
 
       vline.setAttribute('x1', xp);
@@ -335,7 +314,7 @@
     });
   }
 
-  // رویدادهای کلیک برای نمایش/مخفی‌سازی سری‌ها
+  
   function refreshLegendStyles() {
     $legendProfit.classList.toggle('legend-off', !showProfit);
     $legendLoss.classList.toggle('legend-off',   !showLoss);
@@ -344,7 +323,7 @@
   $legendProfit.addEventListener('click', () => {
     showProfit = !showProfit;
     refreshLegendStyles();
-    // فقط دیداری را تغییر می‌دهیم، نیازی به بازترسیم کامل نیست
+    
     if (pathProfit) pathProfit.style.visibility = showProfit ? 'visible' : 'hidden';
     if (dProfit)    dProfit.setAttribute('visibility', showProfit ? 'visible' : 'hidden');
     tip.classList.add('hidden');
@@ -370,7 +349,7 @@
 
         </div>
 
-        <!-- راست: گراف هفته‌ای + گراف ماهانه -->
+        <!-- : گراف هفته‌ای + گراف ماهانه -->
         <div class="flex flex-col space-y-3">
 
           <!-- گراف هفته‌وار -->
