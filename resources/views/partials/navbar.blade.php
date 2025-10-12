@@ -11,18 +11,18 @@
       </div>
 
       {{-- Search --}}
-      
-     <div class="flex-1 px-2 sm:px-4">
-  <div class="max-w-xl ml-auto">
-    <div class="flex items-center h-10 rounded-lg border border-gray-300 bg-gray-50 overflow-hidden">
-      <span class="flex items-center gap-2 px-3 text-gray-600 shrink-0">
-        <i class="fa-solid fa-magnifying-glass text-sm"></i>
-        <span class="text-sm">جستجو</span>
-      </span>
-      <input type="text" class="w-full h-full bg-transparent outline-none px-3 text-sm placeholder-gray-400" />
-    </div>
-  </div>
-</div>
+
+      <div class="flex-1 px-2 sm:px-4">
+        <div class="max-w-xl ml-auto">
+          <div class="flex items-center h-10 rounded-lg border border-gray-300 bg-gray-50 overflow-hidden">
+            <span class="flex items-center gap-2 px-3 text-gray-600 shrink-0">
+              <i class="fa-solid fa-magnifying-glass text-sm"></i>
+              <span class="text-sm">جستجو</span>
+            </span>
+            <input type="text" class="w-full h-full bg-transparent outline-none px-3 text-sm placeholder-gray-400" />
+          </div>
+        </div>
+      </div>
 
 
       <div class="flex items-center gap-2 sm:gap-3">
@@ -40,5 +40,3 @@
     </div>
   </div>
 </header>
-
-
