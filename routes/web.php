@@ -8,35 +8,20 @@ Route::get('/login-Page', function () {
     return view( 'loginPage'); 
 });
 
-<<<<<<< HEAD
+// <<<<<<< HEAD
 // Exists routes :
 Route::get('/orders-Map', function () {
     return view('ordersMap');
-=======
+// =======
 Route::get('/welcome', function () {
     return view('welcome');
->>>>>>> 3c2586917f60c70d206fb5bac5b179bf521ab908
+// >>>>>>> 3c2586917f60c70d206fb5bac5b179bf521ab908
 });
 
 Route::get('/orders-Page', function () {
     return view('ordersPage');
 });
 
-<<<<<<< HEAD
-Route::get('/login-Page', function () {
-    return view('loginPage');
-});
-
-// Dashboard
-Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
-
-// User Management Routes
-Route::resource('users', UserController::class);
-
-// Profile Routes
-Route::get('/profile', [UserController::class, 'profile'])->name('profile');
-Route::put('/profile', [UserController::class, 'updateProfile'])->name('profile.update');
-=======
 // orderForm
 Route::get('/orders-Form', function () {
 
@@ -72,4 +57,3 @@ Route::get('/drivers-Information', function () {
 });
 
 
->>>>>>> 3c2586917f60c70d206fb5bac5b179bf521ab908
