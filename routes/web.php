@@ -10,17 +10,45 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
-// مسیر  ordersMap
-// Route::get('/orders-Map', function () {
-
-  
-//     return view( 'ordersMap'); 
-// });
-
 // orderPage
-// Route::get('/orders-Page', function () {
+Route::get('/orders-Page', function () {
 
   
-//     return view( 'ordersPage'); 
-// });
+    return view( 'ordersPage'); 
+});
+
+// orderForm
+Route::get('/orders-Form', function () {
+
+  
+    return view( 'ordersForm'); 
+});
+
+// ordersInformation
+Route::get('/orders-Information', function () {
+
+  
+    return view( 'ordersInformation'); 
+});
+// driversPage
+Route::get('/drivers-Page', function () {
+
+  
+    return view( 'driversPage'); 
+});
+
+// driversForm
+Route::get('/drivers-Form', function () {
+
+  
+    return view( 'driversForm'); 
+});
+
+// driversInformation
+Route::get('/drivers-Information', function () {
+
+  
+    return view( 'driversInformation'); 
+});
+
 
