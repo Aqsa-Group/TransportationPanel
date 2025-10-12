@@ -9,6 +9,7 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<<<<<<< HEAD
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     #sections { 
@@ -18,6 +19,11 @@
       flex: 1;
     }
   </style>
+=======
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+>>>>>>> 3c2586917f60c70d206fb5bac5b179bf521ab908
   @stack('head')
 </head>
 
