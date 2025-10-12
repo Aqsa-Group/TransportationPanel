@@ -79,30 +79,8 @@
         </svg>
         <span>رانندگان</span>
       </button>
-      <button data-section="maps"
-        class="menu-btn w-full text-right flex items-center gap-3 rounded-xl px-5 py-2 text-sm text-gray-700 transition hover:bg-blue-600 hover:text-white">
- <svg xmlns="http://www.w3.org/2000/svg"  
- width="24" height="24" viewBox="0 0 24 24"  
- fill="none" stroke="currentColor" stroke-width="2"  
- stroke-linecap="round" stroke-linejoin="round" aria-label="map-pin">
 
-  <path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1 1 18 0z"/>  
-  <circle cx="12" cy="10" r="3"/>  
-</svg>  <span>نقشه ها</span>  
-      </button>
-        <button data-section="customers"
-        class="menu-btn w-full text-right flex items-center gap-3 rounded-xl px-5 py-2 text-sm text-gray-700 transition hover:bg-blue-600 hover:text-white">
-  <svg xmlns="http://www.w3.org/2000/svg"  
- width="24" height="24" viewBox="0 0 24 24"  
- fill="none" stroke="currentColor" stroke-width="2"  
- stroke-linecap="round" stroke-linejoin="round" aria-label="user-alt">
 
-  <circle cx="12" cy="8" r="4"/>    <ellipse cx="12" cy="19" rx="7" ry="4"/>  
-</svg>  
-        <span>مشتریان</span>  
-      </button>
-
-<<<<<<< HEAD
       
       <button    data-section="maps" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
         <img src="/img/location.png" class="w-5 h-5" alt="نقشه‌ها" />
@@ -117,11 +95,12 @@
         <span>ارقام</span>
       </button>
 
-      <button data-section="customers" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
+      <button  onclick="window.location.href='{{ url('/customers-Page') }}'"
+      data-section="customers" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
         <img src="/img/profile.png" class="w-5 h-5" alt="مشتریان" />
         <span>مشتریان</span>
       </button>
->>>>>>> 2bbcc8f (loginPage)
+
     </div>
 
     {{-- پایین --}}

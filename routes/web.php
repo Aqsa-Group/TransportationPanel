@@ -51,4 +51,23 @@ Route::get('/drivers-Information', function () {
     return view( 'driversInformation'); 
 });
 
+// customersPage
+Route::get('/customers-Page', function () {
 
+  
+    return view( 'customersPage'); 
+});
+
+// customersForm
+Route::get('/customers-Form', function () {
+
+  
+    return view( 'customersForm'); 
+});
+
+// driversInformation
+Route::get('/customers-Information', function () {
+
+  
+    return view( 'customersInformation'); 
+});

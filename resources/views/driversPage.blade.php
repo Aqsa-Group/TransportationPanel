@@ -255,53 +255,44 @@
       </div>
     @endforeach
   </div>
-
-
-  
     <!-- شماره‌گذاری پایین صفحه --> 
-             <div class="flex flex-col md:flex-row md:items-center md:justify-between mt-4 space-y-3 md:space-y-0">
-
-  <!-- Pagination -->
-  <div class="flex items-center justify-center md:justify-start space-x-0.5 rtl:space-x-reverse mr-2">
-    <!-- Previous Button -->
-    <button class="flex items-center justify-center w-6 h-6 rounded-md border border-gray-300 text-gray-500 bg-[#F3F3F3] hover:bg-gray-100">
-      <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M8.91003 19.9201L15.43 13.4001C16.2 12.6301 16.2 11.3701 15.43 10.6001L8.91003 4.08008" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </button>
-
-    <!-- Page Numbers -->
-    <div class="flex space-x-0.5 rtl:space-x-reverse">
-      <button class="flex items-center justify-center w-6 h-6 rounded-md border border-blue-500 text-blue-600 bg-[#F3F3F3] text-xs font-medium">1</button>
-      <button class="flex items-center justify-center w-6 h-6 rounded-md border border-transparent text-gray-700 bg-[#F3F3F3] hover:border-gray-300 hover:bg-gray-100 text-xs">2</button>
-      <button class="flex items-center justify-center w-6 h-6 rounded-md border border-transparent text-gray-700 bg-[#F3F3F3] hover:border-gray-300 hover:bg-gray-100 text-xs">3</button>
-      <button class="flex items-center justify-center w-6 h-6 rounded-md border border-transparent text-gray-700 bg-[#F3F3F3] text-xs">...</button>
-      <button class="flex items-center justify-center w-6 h-6 rounded-md border border-transparent text-gray-700 bg-[#F3F3F3] hover:border-gray-300 hover:bg-gray-100 text-xs">25</button>
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between mt-4 space-y-3 md:space-y-0">
+      <!-- Pagination -->
+      <div class="flex items-center justify-center md:justify-start space-x-0.5 rtl:space-x-reverse mr-2">
+        <!-- Previous Button -->
+        <button class="flex items-center justify-center w-6 h-6 rounded-md border border-gray-300 text-gray-500 bg-[#F3F3F3] hover:bg-gray-100">
+          <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.91003 19.9201L15.43 13.4001C16.2 12.6301 16.2 11.3701 15.43 10.6001L8.91003 4.08008" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <!-- Page Numbers -->
+        <div class="flex space-x-0.5 rtl:space-x-reverse">
+          <button class="flex items-center justify-center w-6 h-6 rounded-md border border-blue-500 text-blue-600 bg-[#F3F3F3] text-xs font-medium">1</button>
+          <button class="flex items-center justify-center w-6 h-6 rounded-md border border-transparent text-gray-700 bg-[#F3F3F3] hover:border-gray-300 hover:bg-gray-100 text-xs">2</button>
+          <button class="flex items-center justify-center w-6 h-6 rounded-md border border-transparent text-gray-700 bg-[#F3F3F3] hover:border-gray-300 hover:bg-gray-100 text-xs">3</button>
+          <button class="flex items-center justify-center w-6 h-6 rounded-md border border-transparent text-gray-700 bg-[#F3F3F3] text-xs">...</button>
+          <button class="flex items-center justify-center w-6 h-6 rounded-md border border-transparent text-gray-700 bg-[#F3F3F3] hover:border-gray-300 hover:bg-gray-100 text-xs">25</button>
+        </div>
+        <!-- Next Button -->
+        <button class="flex items-center justify-center w-6 h-6 rounded-md border border-gray-300 text-gray-500 bg-[#F3F3F3] hover:bg-gray-100">  
+          <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 19.9201L8.47997 13.4001C7.70997 12.6301 7.70997 11.3701 8.47997 10.6001L15 4.08008" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <!-- Total Drivers -->
+      <div class="flex items-center justify-center md:justify-end space-x-2 rtl:space-x-reverse">
+        <span class="text-gray-700 text-sm font-medium">
+        تعداد کل رانندگان
+        </span>
+        <span class="border border-gray-300 rounded-lg px-4 py-1 text-gray-800 text-sm font-semibold">
+        {{ $drivers->count() }}
+        </span>
+      </div>
     </div>
 
-    <!-- Next Button -->
-    <button class="flex items-center justify-center w-6 h-6 rounded-md border border-gray-300 text-gray-500 bg-[#F3F3F3] hover:bg-gray-100">
-      <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M15 19.9201L8.47997 13.4001C7.70997 12.6301 7.70997 11.3701 8.47997 10.6001L15 4.08008" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </button>
   </div>
-
-  <!-- Total Drivers -->
-  <div class="flex items-center justify-center md:justify-end space-x-2 rtl:space-x-reverse">
-        <span class="text-gray-700 text-sm font-medium">
-      تعداد کل رانندگان
-    </span>
-    <span class="border border-gray-300 rounded-lg px-4 py-1 text-gray-800 text-sm font-semibold">
-      {{ $drivers->count() }}
-    </span>
-
-  </div>
-
-</div>
-
-            </div>
-       </div> 
+  </div> 
 </div>
 
 <!-- ✅ فونت وزیر -->
