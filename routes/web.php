@@ -1,56 +1,57 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\DashboardController;
 
-Route::get('/login-Page', function () {
-    return view( 'loginPage'); 
-});
-
-Route::get('/welcome', function () {
+Route::get('/', function () {
     return view('welcome');
 });
 
-// orderPage
+// Authentication
+Route::get('/login-Page', function () {
+    return view('loginPage');
+});
+
+// Orders
+Route::get('/orders-Map', function () {
+    return view('ordersMap');
+});
+
 Route::get('/orders-Page', function () {
-
-  
-    return view( 'ordersPage'); 
+    return view('ordersPage');
 });
 
-// orderForm
 Route::get('/orders-Form', function () {
-
-  
-    return view( 'ordersForm'); 
+    return view('ordersForm');
 });
 
-// ordersInformation
 Route::get('/orders-Information', function () {
-
-  
-    return view( 'ordersInformation'); 
+    return view('ordersInformation');
 });
-// driversPage
+
+// Drivers
 Route::get('/drivers-Page', function () {
-
-  
-    return view( 'driversPage'); 
+    return view('driversPage');
 });
 
-// driversForm
 Route::get('/drivers-Form', function () {
-
-  
-    return view( 'driversForm'); 
+    return view('driversForm');
 });
 
-// driversInformation
 Route::get('/drivers-Information', function () {
-
-  
-    return view( 'driversInformation'); 
+    return view('driversInformation');
 });
 
+// Dashboard
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+// User Management Routes
+Route::resource('users', UserController::class);
+
+// Profile Routes
+Route::get('/profile', [UserController::class, 'profile'])->name('profile');
+Route::put('/profile', [UserController::class, 'updateProfile'])->name('profile.update');
 // customersPage
 Route::get('/customers-Page', function () {
 

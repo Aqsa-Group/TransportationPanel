@@ -11,7 +11,12 @@
         <span class="font-semibold hidden xs:inline">Dashboard</span>
       </div>
 
+<<<<<<< HEAD
+      {{-- Search --}}
+
+=======
       <!-- Search -->
+>>>>>>> 3c2586917f60c70d206fb5bac5b179bf521ab908
       <div class="flex-1 px-2 sm:px-4">
         <div class="max-w-xl ml-auto">
           <div class="flex items-center h-10 rounded-lg border border-gray-300 bg-gray-50 overflow-hidden">
@@ -71,6 +76,9 @@
       </div>
     </div>
   </div>
+<<<<<<< HEAD
+</header>
+=======
 </header>
 
 <!-- JS -->
@@ -89,3 +97,4 @@
     }
   });
 </script>
+>>>>>>> 3c2586917f60c70d206fb5bac5b179bf521ab908

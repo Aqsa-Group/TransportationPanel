@@ -21,8 +21,13 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        // New fields added in the migration(2024_01_01_000001_update_users_table.php)
+        'phone',
+        'address',
+        'avatar',
+        'role',
+        'is_active',
     ];
-
     /**
      * The attributes that should be hidden for serialization.
      *
