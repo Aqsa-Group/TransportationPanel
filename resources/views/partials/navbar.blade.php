@@ -59,11 +59,13 @@
                 <i class="fa-regular fa-user text-blue-600"></i>
                 پروفایل
               </a>
-              <a href="#"
-                class="flex items-center gap-2 px-3 py-1.5 text-sm text-gray-700 hover:bg-gray-100 transition">
-                <i class="fa-solid fa-arrow-right-from-bracket text-blue-600"></i>
-                خارج شدن
-              </a>
+              <form action="{{ route('logout') }}" method="POST" class="inline">
+                @csrf
+                <button type="submit" class="flex items-center gap-2 px-3 py-1.5 text-sm text-gray-700 hover:bg-gray-100 transition w-full text-right">
+                  <i class="fa-solid fa-arrow-right-from-bracket text-blue-600"></i>
+                  خارج شدن
+                </button>
+              </form>
             </div>
           </div>
         </div>

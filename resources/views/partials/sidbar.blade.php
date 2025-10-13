@@ -98,21 +98,24 @@
 
     {{-- پایین --}}
     <div class="space-y-1">
-      <button data-section="logout"
-        class="menu-btn w-full text-right flex items-center gap-3 rounded-xl px-5 py-2 text-sm text-gray-700 
-        transition-all duration-300 hover:bg-red-600 active:bg-red-700 focus:bg-red-600 focus:ring-0 
-        focus:outline-none group relative overflow-hidden">
-        <div class="relative w-5 h-5">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-               xmlns="http://www.w3.org/2000/svg"
-               class="stroke-gray-700 transition-all duration-300 group-hover:stroke-white group-active:stroke-white group-focus:stroke-white">
-            <path d="M13 11L21.2 2.80005" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M22 6.8V2H17.2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M11 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22H15C20 22 22 20 22 15V13" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <span class="transition-all duration-300 group-hover:text-white group-active:text-white group-focus:text-white">خارج شدن</span>
-      </button>
+      <form action="{{ route('logout') }}" method="POST" class="w-full">
+        @csrf
+        <button type="submit" data-section="logout"
+          class="menu-btn w-full text-right flex items-center gap-3 rounded-xl px-5 py-2 text-sm text-gray-700 
+          transition-all duration-300 hover:bg-red-600 active:bg-red-700 focus:bg-red-600 focus:ring-0 
+          focus:outline-none group relative overflow-hidden">
+          <div class="relative w-5 h-5">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 xmlns="http://www.w3.org/2000/svg"
+                 class="stroke-gray-700 transition-all duration-300 group-hover:stroke-white group-active:stroke-white group-focus:stroke-white">
+              <path d="M13 11L21.2 2.80005" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M22 6.8V2H17.2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M11 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22H15C20 22 22 20 22 15V13" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="transition-all duration-300 group-hover:text-white group-active:text-white group-focus:text-white">خارج شدن</span>
+        </button>
+      </form>
 
       <button data-section="help"
         class="menu-btn w-full text-right flex items-center gap-3 rounded-xl px-5 py-2 text-sm text-gray-700 transition hover:bg-blue-600 hover:text-white">

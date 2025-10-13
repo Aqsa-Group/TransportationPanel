@@ -3,15 +3,19 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\AuthController;
 
 Route::get('/', function () {
-    return view('welcome');
+    if (auth()->check()) {
+        return redirect('/dashboard');
+    }
+    return redirect('/login-Page');
 });
 
-// Authentication
-Route::get('/login-Page', function () {
-    return view('loginPage');
-});
+// Authentication Routes
+Route::get('/login-Page', [AuthController::class, 'showLogin'])->name('login');
+Route::post('/login', [AuthController::class, 'login'])->name('login.post');
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 // Orders
 Route::get('/orders-Map', function () {
@@ -43,12 +47,15 @@ Route::get('/drivers-Information', function () {
     return view('driversInformation');
 });
 
-// Dashboard
-Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
-
-// User Management Routes
-Route::resource('users', UserController::class);
-
-// Profile Routes
-Route::get('/profile', [UserController::class, 'profile'])->name('profile');
-Route::put('/profile', [UserController::class, 'updateProfile'])->name('profile.update');
+// Protected Routes (نیاز به احراز هویت)
+Route::middleware('auth')->group(function () {
+    // Dashboard
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    
+    // User Management Routes
+    Route::resource('users', UserController::class);
+    
+    // Profile Routes
+    Route::get('/profile', [UserController::class, 'profile'])->name('profile');
+    Route::put('/profile', [UserController::class, 'updateProfile'])->name('profile.update');
+});
