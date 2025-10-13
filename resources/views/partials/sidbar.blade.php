@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <aside id="sidebar" class="fixed inset-y-0 right-0 z-40 w-56 bg-white border-l border-gray-200 transform translate-x-full transition-transform duration-200 ease-out
          lg:static lg:translate-x-0 lg:flex lg:flex-col lg:w-60" aria-label="Sidebar">
 
@@ -11,7 +10,6 @@
       <span class="text-gray-700 font-semibold">ادمین پنل</span>
     </div>
 
-=======
 <aside id="sidebar"
   class="fixed inset-y-0 right-0 z-40 w-48 bg-white border-l border-gray-200 transform translate-x-full transition-transform duration-200 ease-out
          lg:static lg:translate-x-0 lg:flex lg:flex-col lg:w-52" aria-label="Sidebar">
@@ -22,7 +20,6 @@
       <img src="/img/Group 2.png" alt="badge" class="w-14 h-10" />
       <span class="text-gray-700 font-semibold">ادمین پنل</span>
     </div>
->>>>>>> 3c2586917f60c70d206fb5bac5b179bf521ab908
 
     <button id="closeSidebar"
       class="lg:hidden inline-flex items-center justify-center rounded-lg border border-gray-200 p-2 hover:bg-gray-100 transition"
@@ -36,7 +33,6 @@
 
     <div class="space-y-1">
       <button data-section="dashboard"
-<<<<<<< HEAD
         class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm bg-blue-600 text-white transition">
 
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -45,7 +41,7 @@
           <rect x="13" y="3" width="8" height="5" rx="2" />
           <rect x="13" y="10" width="8" height="11" rx="2" />
           <rect x="3" y="13" width="8" height="8" rx="2" />
-=======
+
         class="menu-btn active w-full text-right flex items-center gap-3 rounded-xl px-5 py-2 text-sm transition bg-blue-600 text-white">
         <svg width="24" height="24" viewBox="0 0 24 24"
              fill="none" stroke="currentColor" stroke-width="2"
@@ -55,12 +51,10 @@
           <rect x="13" y="3" width="8" height="5" rx="2"/>
           <rect x="13" y="10" width="8" height="11" rx="2"/>
           <rect x="3" y="13" width="8" height="8" rx="2"/>
->>>>>>> 3c2586917f60c70d206fb5bac5b179bf521ab908
         </svg>
         <span>داشبورد</span>
       </button>
 
-<<<<<<< HEAD
 
       <button onclick="window.location.href='{{ url('/orders-Page') }}'" data-section="orders"
         class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
@@ -90,7 +84,6 @@
             <circle cx="7" cy="8" r="2.5" />
             <!-- بدن بالا چپ -->
             <ellipse cx="7" cy="14" rx="3" ry="2" />
-=======
       <button  onclick="window.location.href='{{ url('/orders-Page') }}'" data-section="orders" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
         <img src="/img/Vector (1).png" class="w-5 h-5" alt="سفارشات" />
         <span>سفارشات</span>
@@ -112,7 +105,6 @@
         </svg>
         <span>ادمین‌ها</span>
       </button>
->>>>>>> 3c2586917f60c70d206fb5bac5b179bf521ab908
 
             <!-- سر بالا راست -->
             <circle cx="17" cy="8" r="2.5" />
@@ -127,13 +119,11 @@
           <span>ادمین ها</span>
         </button>
 
-<<<<<<< HEAD
         <button data-section="reports"
           class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
           <img src="/img/note-2.png" class="w-5 h-5" alt="گزارشات" />
 
           </svg>
-=======
       <button data-section="drivers"   onclick="window.location.href='{{ url('/drivers-Page') }}'"
       class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
         {{-- آیکون لاری --}}
@@ -154,7 +144,6 @@
  width="24" height="24" viewBox="0 0 24 24"  
  fill="none" stroke="currentColor" stroke-width="2"  
  stroke-linecap="round" stroke-linejoin="round" aria-label="map-pin">
->>>>>>> 3c2586917f60c70d206fb5bac5b179bf521ab908
 
   <path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1 1 18 0z"/>  
   <circle cx="12" cy="10" r="3"/>  
@@ -167,7 +156,6 @@
  fill="none" stroke="currentColor" stroke-width="2"  
  stroke-linecap="round" stroke-linejoin="round" aria-label="user-alt">
 
-<<<<<<< HEAD
           <span>گزارشات</span>
         </button>
 
@@ -205,23 +193,20 @@
     <img src="/img/location.png" class="w-5 h-5" alt="نقشه‌ها" />
     <span>نقشه ها</span>
 </button> -->
-=======
   <circle cx="12" cy="8" r="4"/>    <ellipse cx="12" cy="19" rx="7" ry="4"/>  
 </svg>  
         <span>مشتریان</span>  
       </button>
 
-<<<<<<< HEAD
+
       
       <button    data-section="maps" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
         <img src="/img/location.png" class="w-5 h-5" alt="نقشه‌ها" />
         <span>نقشه ها</span>
       </button>
->>>>>>> 3c2586917f60c70d206fb5bac5b179bf521ab908
 
 
 
-<<<<<<< HEAD
 
           <button data-section="stats"
             class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
@@ -243,18 +228,21 @@
             </svg>
             <span>مشتریان</span>
           </button>
-=======
       <button data-section="customers" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
         <img src="/img/profile.png" class="w-5 h-5" alt="مشتریان" />
         <span>مشتریان</span>
       </button>
->>>>>>> 2bbcc8f (loginPage)
->>>>>>> 3c2586917f60c70d206fb5bac5b179bf521ab908
+
+      <button  onclick="window.location.href='{{ url('/customers-Page') }}'"
+      data-section="customers" class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-700 transition">
+        <img src="/img/profile.png" class="w-5 h-5" alt="مشتریان" />
+        <span>مشتریان</span>
+      </button>
+
     </div>
 
     {{-- پایین --}}
     <div class="space-y-1">
-<<<<<<< HEAD
       <button data-section="logout"
         class="w-full text-right flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600 transition">
         <img src="/img/export.png" class="w-5 h-5" alt="خروج" />
@@ -301,7 +289,6 @@
                    1.65 0 0 0-1.51 1z" />
         </svg>
         <span>تنظیمات</span>
-=======
  <button data-section="logout"
   class="menu-btn w-full text-right flex items-center gap-3 rounded-xl px-5 py-2 text-sm text-gray-700 
   transition-all duration-300 hover:bg-red-600 active:bg-red-700 focus:bg-red-600 focus:ring-0 
@@ -359,7 +346,6 @@
         <span>تنظیمات</span>  
 
        
->>>>>>> 3c2586917f60c70d206fb5bac5b179bf521ab908
       </button>
     </div>
   </nav>
@@ -367,7 +353,6 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-<<<<<<< HEAD
     const openBtn = document.getElementById('openSidebar');
     const sidebar = document.getElementById('sidebar');
     const closeBtn = document.getElementById('closeSidebar');
@@ -375,13 +360,11 @@
     if (!sidebar || !openBtn) return;
 
 
-=======
     const openBtn  = document.getElementById('openSidebar');
     const sidebar  = document.getElementById('sidebar');
     const closeBtn = document.getElementById('closeSidebar');
     const menuButtons = document.querySelectorAll('.menu-btn');
     // 🔹 حالت باز و بسته شدن سایدبار
->>>>>>> 3c2586917f60c70d206fb5bac5b179bf521ab908
     let backdrop = document.getElementById('sidebarBackdrop');
     if (!backdrop) {
       backdrop = document.createElement('div');
@@ -394,11 +377,8 @@
       sidebar.classList.remove('translate-x-full');
       backdrop.classList.remove('hidden');
       document.documentElement.classList.add('overflow-hidden');
-<<<<<<< HEAD
       openBtn.setAttribute('aria-expanded', 'true');
-=======
       openBtn?.setAttribute('aria-expanded', 'true');
->>>>>>> 3c2586917f60c70d206fb5bac5b179bf521ab908
     };
 
     const close = () => {
@@ -412,7 +392,6 @@
     closeBtn?.addEventListener('click', close);
     backdrop.addEventListener('click', close);
 
-<<<<<<< HEAD
 
     const mql = window.matchMedia('(min-width: 1024px)');
     const sync = (e) => {
@@ -426,7 +405,6 @@
     };
     mql.addEventListener?.('change', sync);
     sync(mql);
-=======
     // 🔹 کنترل دکمه فعال (Active)
     menuButtons.forEach(btn => {
       btn.addEventListener('click', () => {
@@ -434,6 +412,5 @@
         btn.classList.add('active', 'bg-blue-600', 'text-white');
       });
     });
->>>>>>> 3c2586917f60c70d206fb5bac5b179bf521ab908
   });
 </script>

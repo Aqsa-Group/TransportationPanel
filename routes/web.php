@@ -52,3 +52,23 @@ Route::resource('users', UserController::class);
 // Profile Routes
 Route::get('/profile', [UserController::class, 'profile'])->name('profile');
 Route::put('/profile', [UserController::class, 'updateProfile'])->name('profile.update');
+// customersPage
+Route::get('/customers-Page', function () {
+
+  
+    return view( 'customersPage'); 
+});
+
+// customersForm
+Route::get('/customers-Form', function () {
+
+  
+    return view( 'customersForm'); 
+});
+
+// driversInformation
+Route::get('/customers-Information', function () {
+
+  
+    return view( 'customersInformation'); 
+});
