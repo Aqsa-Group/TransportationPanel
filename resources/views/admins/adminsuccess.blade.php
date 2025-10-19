@@ -1,23 +1,7 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl" class="overflow-x-hidden">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ثبت موفقانه ادمین</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    /* انیمیشن Fade-in + Scale */
-    .fade-scale {
-      opacity: 0;
-      transform: scale(0.95);
-      transition: opacity 0.5s ease, transform 0.5s ease;
-    }
-    .fade-scale.show {
-      opacity: 1;
-      transform: scale(1);
-    }
-  </style>
-</head>
+@extends('layouts.app')
+
+@section('content')
+
 <body class="bg-gray-100 min-h-screen overflow-hidden flex items-center justify-center">
 
   <div class="m-3 sm:m-4 w-full max-w-2xl fade-scale" id="card">
@@ -131,5 +115,19 @@
 
     render();
   </script>
+   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* انیمیشن Fade-in + Scale */
+    .fade-scale {
+      opacity: 0;
+      transform: scale(0.95);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .fade-scale.show {
+      opacity: 1;
+      transform: scale(1);
+    }
+  </style>
 </body>
-</html>
+@endsection
+

@@ -1,23 +1,6 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl" class="overflow-x-hidden">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ثبت موفقانه مشتری</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    /* انیمیشن Fade-in + Scale */
-    .fade-scale {
-      opacity: 0;
-      transform: scale(0.95);
-      transition: opacity 0.5s ease, transform 0.5s ease;
-    }
-    .fade-scale.show {
-      opacity: 1;
-      transform: scale(1);
-    }
-  </style>
-</head>
+@extends('layouts.app')
+@section('content')
+
 <body class="bg-gray-100 min-h-screen overflow-hidden flex items-center justify-center">
 
   <div class="m-3 sm:m-4 w-full max-w-2xl fade-scale" id="card">
@@ -87,7 +70,7 @@
   </p>
 
   <div class="w-full mt-0">
-    <a href="#"
+    <a href="{{ route('customers.page') }}"
        class="block text-center bg-[#FF0000] hover:bg-[#CA0808] text-white w-full text-xs sm:text-sm p-2.5 rounded-lg transition">
        برگشت به صفحه اصلی
     </a>
@@ -131,5 +114,18 @@
 
     render();
   </script>
+   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* انیمیشن Fade-in + Scale */
+    .fade-scale {
+      opacity: 0;
+      transform: scale(0.95);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .fade-scale.show {
+      opacity: 1;
+      transform: scale(1);
+    }
+  </style>
 </body>
-</html>
+@endsection

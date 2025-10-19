@@ -1,3 +1,8 @@
+@extends('layouts.app')
+
+@section('title', 'اطلاعات راننده')
+
+@section('content')
 <!DOCTYPE html>
 <html lang="fa" dir="rtl" class="overflow-x-hidden">
 <head>
@@ -39,26 +44,27 @@
       <div class="w-full max-w-md">
         <h2 class="text-xl sm:text-2xl font-bold text-center mt-2">اطلاعات راننده</h2>
         <div class="border-t-2 mt-2 border-[#0400FF] mb-4"></div>
-          <!-- تصویر موفقیت -->
-          <div class="flex justify-center mb-2">
-            <img src="/img/3.png" alt="Success"
-                 class="w-[120px]  sm:w-80 md:w-90 rounded-xl shadow-md">
-          </div>
 
-          <!-- پیام -->
-          <div class="flex justify-center">
-            <h1 class="w-56 flex justify-center mb-3 font-extrabold tracking-wide text-base sm:text-lg">
-              اطلاعات با موفقیت ثبت شد
-            </h1>
-          </div>
+        <!-- تصویر موفقیت -->
+        <div class="flex justify-center mb-2">
+          <img src="/img/3.png" alt="Success"
+               class="w-[120px] sm:w-80 md:w-90 rounded-xl shadow-md">
+        </div>
+
+        <!-- پیام -->
+        <div class="flex justify-center">
+          <h1 class="w-56 flex justify-center mb-3 font-extrabold tracking-wide text-base sm:text-lg">
+            اطلاعات با موفقیت ثبت شد
+          </h1>
+        </div>
+
         <!-- دکمه -->
-          <div class="flex  mb-2 justify-center">
-            <a href="#"
-               class="w-[330px] flex justify-center py-2.5 rounded-xl bg-[#FF0000] hover:bg-[#CA0808] text-white text-sm sm:text-base font-semibold transition-all duration-200">
-              بازگشت به صفحه اصلی
-            </a>
-          </div>
-
+        <div class="flex mb-2 justify-center">
+          <a href="{{ route('drivers.page') }}"
+             class="w-[330px] flex justify-center py-2.5 rounded-xl bg-[#FF0000] hover:bg-[#CA0808] text-white text-sm sm:text-base font-semibold transition-all duration-200">
+            بازگشت به صفحه اصلی
+          </a>
+        </div>
 
       </div>
     </div>
@@ -73,14 +79,16 @@
     </div>
 
   </div>
+
   <script>
-  window.addEventListener("DOMContentLoaded", () => {
-    const card = document.getElementById("card");
-    setTimeout(() => {
-      card.classList.add("show");
-    }, 100);
-  });
-</script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const card = document.getElementById("card");
+      setTimeout(() => {
+        card.classList.add("show");
+      }, 100);
+    });
+  </script>
 
 </body>
 </html>
+@endsection

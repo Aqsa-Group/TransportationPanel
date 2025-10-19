@@ -89,7 +89,7 @@
       رانندگان
     </h2>
     <button onclick="window.location.href='{{ url('/drivers-Form') }}'"
-      class="bg-blue-600 hover:bg-blue-700 text-white rounded-lg px-4 py-2 flex items-center gap-1 text-sm sm:text-base">
+      class="bg-[#0800FF] hover:bg-[#0B35CC] text-white rounded-lg px-4 py-2 flex items-center gap-1 text-sm sm:text-base">
       اضافه کردن راننده جدید
 <svg class="w-5 h-5" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.325 17.1627C16.2649 17.1627 17.8375 15.5901 17.8375 13.6502C17.8375 11.7103 16.2649 10.1377 14.325 10.1377C12.3851 10.1377 10.8125 11.7103 10.8125 13.6502C10.8125 15.5901 12.3851 17.1627 14.325 17.1627Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>

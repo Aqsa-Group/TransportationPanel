@@ -1,23 +1,6 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl" class="overflow-x-hidden">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title> اطلاعات مشتری</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    /* Fade-in + Scale */
-    .fade-scale {
-      opacity: 0;
-       transform: scale(0.95);
-      transition: opacity 0.5s ease, transform 0.5s ease;
-    }
-    .fade-scale.show {
-      opacity: 1;
-      transform: scale(1);
-    }
-  </style>
-</head>
+@extends('layouts.app')
+@section('content')
+
 <body class="bg-gray-100 flex items-center justify-center">
 
 
@@ -144,9 +127,9 @@
 
      <div class="flex flex-col sm:flex-row gap-3 mt-4 w-full">
         <button class="w-full bg-[#FF0000] hover:bg-[#CA0808] text-white px-6 py-2 text-sm rounded-lg ">
-          <a href="#" >برگشت</a>
+          <a href="{{ route('customers.page') }}" >برگشت</a>
         </button>
-        <a href="#" class="w-full text-center hover:bg-blue-800 bg-[#0400FF] text-white px-6 py-2 text-sm rounded-lg ">
+        <a href="{{ route('customers.info1') }}" class="w-full text-center hover:bg-blue-800 bg-[#0400FF] text-white px-6 py-2 text-sm rounded-lg ">
           مرحله بعدی
         </a>
       </div>
@@ -190,5 +173,18 @@
     }));
     render();
   </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Fade-in + Scale */
+    .fade-scale {
+      opacity: 0;
+       transform: scale(0.95);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .fade-scale.show {
+      opacity: 1;
+      transform: scale(1);
+    }
+  </style>
 </body>
-</html>
+@endsection

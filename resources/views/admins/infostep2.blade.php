@@ -1,23 +1,7 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl" class="overflow-x-hidden">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title> اطلاعات ادمین</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    /* Fade-in + Scale */
-    .fade-scale {
-      opacity: 0;
-       transform: scale(0.95);
-      transition: opacity 0.5s ease, transform 0.5s ease;
-    }
-    .fade-scale.show {
-      opacity: 1;
-      transform: scale(1);
-    }
-  </style>
-</head>
+@extends('layouts.app')
+
+@section('content')
+
 <body class="bg-gray-100 flex items-center justify-center">
 
 
@@ -165,5 +149,18 @@
     }));
     render();
   </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Fade-in + Scale */
+    .fade-scale {
+      opacity: 0;
+       transform: scale(0.95);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .fade-scale.show {
+      opacity: 1;
+      transform: scale(1);
+    }
+  </style>
 </body>
-</html>
+@endsection

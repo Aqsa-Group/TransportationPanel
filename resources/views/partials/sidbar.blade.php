@@ -23,7 +23,8 @@
     <!-- بالا -->
     <div class="space-y-1">
       <a href="{{ route('home') }}" data-section="dashboard"
-        class="menu-btn active w-full text-right flex items-center gap-3 rounded-xl px-5 py-2 text-sm transition bg-[#0800FF] text-white">
+        class="menu-btn active w-full text-right flex items-center gap-3 rounded-xl px-5 py-2 text-sm transition
+        {{ request()->routeIs('home') ? 'bg-[#0800FF] text-white' : 'text-gray-700 hover:bg-[#0800FF] hover:text-white' }}">
         <svg width="24" height="24" viewBox="0 0 24 24"
              fill="none" stroke="currentColor" stroke-width="2"
              stroke-linecap="round" stroke-linejoin="round" class="icon">
@@ -35,8 +36,9 @@
         <span>داشبورد</span>
       </a>
 
-      <a data-section="orders"
-        class="menu-btn w-full text-right flex items-center gap-3 rounded-xl px-5 py-2 text-sm text-gray-700 transition hover:bg-[#0800FF] hover:text-white">
+      <a data-section="orders" href="{{ route('orders.page') }}"
+        class="menu-btn w-full text-right flex items-center gap-3 rounded-xl px-5 py-2 text-sm text-gray-700 transition
+        {{ request()->routeIs('orders.*') ? 'bg-[#0800FF] text-white' : 'text-gray-700 hover:bg-[#0800FF] hover:text-white' }}">
         <svg xmlns="http://www.w3.org/2000/svg"
              width="24" height="24" viewBox="0 0 18 23"
              fill="none" stroke="currentColor" stroke-width="1.5"
@@ -47,7 +49,8 @@
       </a>
 
       <a  href="{{ route('admins.index') }}" data-section="admins"
-        class="menu-btn w-full text-right flex items-center gap-3 rounded-xl px-5 py-2 text-sm text-gray-700 transition hover:bg-[#0800FF] hover:text-white">
+        class="menu-btn w-full text-right flex items-center gap-3 rounded-xl px-5 py-2 text-sm text-gray-700 transition
+        {{ request()->routeIs('admins.*') ? 'bg-[#0800FF] text-white' : 'text-gray-700 hover:bg-[#0800FF] hover:text-white' }}">
         <svg xmlns="http://www.w3.org/2000/svg"
              width="24" height="24" viewBox="0 0 24 24"
              fill="none" stroke="currentColor" stroke-width="2"
@@ -62,8 +65,9 @@
         <span>ادمین‌ها</span>
 </a>
 
-      <a data-section="reports"
-        class="menu-btn w-full text-right flex items-center gap-3 rounded-xl px-5 py-2 text-sm text-gray-700 transition hover:bg-[#0800FF] hover:text-white group">
+      <a data-section="reports" href="{{ route('reports.page') }}"
+        class="menu-btn w-full text-right flex items-center gap-3 rounded-xl px-5 py-2 text-sm text-gray-700 transition
+        {{ request()->routeIs('reports.*') ? 'bg-[#0800FF] text-white' : 'text-gray-700 hover:bg-[#0800FF] hover:text-white' }}">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
              xmlns="http://www.w3.org/2000/svg"
              class="stroke-gray-700 group-hover:stroke-white transition">
@@ -75,8 +79,9 @@
         <span>گزارشات</span>
       </a>
 
-      <a data-section="drivers"
-        class="menu-btn w-full text-right flex items-center gap-3 rounded-xl px-5 py-2 text-sm text-gray-700 transition hover:bg-[#0800FF] hover:text-white">
+      <a data-section="drivers" href="{{ route('drivers.page') }}"
+        class="menu-btn w-full text-right flex items-center gap-3 rounded-xl px-5 py-2 text-sm text-gray-700 transition
+        {{ request()->routeIs('drivers.*') ? 'bg-[#0800FF] text-white' : 'text-gray-700 hover:bg-[#0800FF] hover:text-white' }}">
         <svg xmlns="http://www.w3.org/2000/svg"
              width="24" height="24" viewBox="0 0 24 24"
              fill="none" stroke="currentColor" stroke-width="2"
@@ -89,8 +94,9 @@
         <span>رانندگان</span>
       </a>
 
-      <a data-section="maps"
-        class="menu-btn w-full text-right flex items-center gap-3 rounded-xl px-5 py-2 text-sm text-gray-700 transition hover:bg-[#0800FF] hover:text-white">
+      <a data-section="maps" href="{{ route('map.page') }}"
+        class="menu-btn w-full text-right flex items-center gap-3 rounded-xl px-5 py-2 text-sm text-gray-700 transition
+        {{ request()->routeIs('map.page') ? 'bg-[#0800FF] text-white' : 'text-gray-700 hover:bg-[#0800FF] hover:text-white' }}">
         <svg xmlns="http://www.w3.org/2000/svg"
              width="24" height="24" viewBox="0 0 24 24"
              fill="none" stroke="currentColor" stroke-width="2"
@@ -101,8 +107,9 @@
         <span>نقشه ها</span>
       </a>
 
-      <a data-section="customers"
-        class="menu-btn w-full text-right flex items-center gap-3 rounded-xl px-5 py-2 text-sm text-gray-700 transition hover:bg-[#0800FF] hover:text-white">
+      <a data-section="customers" href="{{ route('customers.page') }}"
+        class="menu-btn w-full text-right flex items-center gap-3 rounded-xl px-5 py-2 text-sm text-gray-700 transition
+                {{ request()->routeIs('customers.*') ? 'bg-[#0800FF] text-white' : 'text-gray-700 hover:bg-[#0800FF] hover:text-white' }}">
         <svg xmlns="http://www.w3.org/2000/svg"
              width="24" height="24" viewBox="0 0 24 24"
              fill="none" stroke="currentColor" stroke-width="2"
@@ -145,8 +152,9 @@
         <span>کمک</span>
       </a>
 
-      <a data-section="settings"
-        class="menu-btn w-full text-right flex items-center gap-3 rounded-xl px-5 py-2 text-sm text-gray-700 transition hover:bg-[#0800FF] hover:text-white">
+      <a data-section="settings" href="{{ route('settings.page') }}"
+        class="menu-btn w-full text-right flex items-center gap-3 rounded-xl px-5 py-2 text-sm text-gray-700 transition
+        {{ request()->routeIs('settings.*') ? 'bg-[#0800FF] text-white' : 'text-gray-700 hover:bg-[#0800FF] hover:text-white' }}">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-label="settings"> <circle cx="12" cy="12" r="3"/> <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.09A1.65 1.65 0 0 0 9 4.6V4a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/> </svg>
         <span>تنظیمات</span>
       </a>

@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تنظیمات</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
- <style>
-    /* Fade-in + Scale */
-    .fade-scale{opacity:0;transform:scale(.98);transition:opacity .45s ease,transform .45s ease}
-    .fade-scale.show{opacity:1;transform:scale(1)}
-  </style>
+@extends('layouts.app')
+@section('content')
+
 <body class="bg-gray-100 verflow-hidden flex items-center justify-center">
 
 <div class="flex fade-scale  items-center justify-center min-h-screen w-full bg-gray-100 px-4 py-6" id="card">
@@ -126,7 +116,7 @@
             <!-- دکمه ثبت -->
             <div class="w-full flex justify-center mt-3">
                 <button class="bg-[#1C00F1] h-[50px] hover:bg-blue-700 text-white text-base md:text-lg font-semibold px-6 py-2 rounded-xl shadow transition w-full">
-                    ثبت
+                   <a href="{{ route('home') }}" >ثبت</a>
                 </button>
             </div>
 
@@ -147,6 +137,13 @@
       if (card) setTimeout(() => card.classList.add('show'), 80);
     });
   </script>
+  <style>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    /* Fade-in + Scale */
+    .fade-scale{opacity:0;transform:scale(.98);transition:opacity .45s ease,transform .45s ease}
+    .fade-scale.show{opacity:1;transform:scale(1)}
+  </style>
 
 </body>
-</html>
+@endsection
