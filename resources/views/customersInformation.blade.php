@@ -1,66 +1,131 @@
 @extends('layouts.app')
-
-@section('title','داشبورد')
-
 @section('content')
 
-<div class="bg-gray-100 font-sans text-gray-800 flex items-center justify-center p-3 sm:p-4">
+<body class="bg-gray-100 min-h-screen overflow-hidden flex items-center justify-center">
 
-  <!-- باکس اصلی سفید -->
-  <div class="w-full md:w-[600px] lg:w-[1000px] bg-white rounded-2xl shadow-lg flex flex-col lg:flex-row overflow-hidden">
+  <div class="m-3 sm:m-4 w-full max-w-2xl fade-scale" id="card">
+    <div class="bg-white rounded-2xl shadow-lg p-2 sm:p-3">
 
-    <!-- ستون پیام موفقیت (در موبایل اول بیاد) -->
-    <div class="flex-1 lg:w-7/12 flex items-center justify-center p-5 sm:p-6 order-1 lg:order-1">
-      <div class="w-full max-w-md text-center lg:text-right">
 
-        <!-- عنوان -->
-        <h2 class="text-lg sm:text-[40px] lg:text-[45px] md:text-2xl text-gray-800 mb-6 text-center">
-          اطلاعات سفارش
-        </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 items-stretch md:[&>div]:h-full mb-2 md:h-[460px]">
 
-        <div class="border-t-2 border-blue-600 w-auto mx-auto lg:mx-0 mb-6"></div>
 
-        <!-- تصویر موفقیت -->
-        <div class="flex justify-center mb-2">
-          <img src="/img/photo_2025.jpg" alt="Success" 
-               class="w-[120px] sm:w-80 md:w-90 rounded-xl shadow-md">
+        <div class="relative order-3 md:order-2 rounded-lg overflow-hidden p-2">
+          <img src="{{ asset('img/Embark on your dream holiday with confidence! 🏖️….jpeg') }}" class="w-full h-full object-cover rounded-lg" alt="admin">
         </div>
 
-        <!-- پیام موفقیت -->
-        <div class="flex justify-center">
-          <h1 class=" w-56 flex justify-center mb-3 font-extrabold tracking-wide text-base sm:text-lg">
-            اطلاعات با موفقیت ثبت شد
-          </h1>
-        </div>
 
-        <!-- دکمه بازگشت -->
-        <div class="flex justify-center">
-          <a 
-             class=" w-56 flex justify-center py-2.5 rounded-xl bg-[#FF0000] text-white text-sm sm:text-base font-semibold transition-all duration-200">
-            بازگشت به صفحه اصلی
-          </a>
-        </div>
+        <div class="rounded-2xl px-2 pb-6 pt-4 flex flex-col order-2 md:order-1 h-full">
+          <div class="mb-1">
+            <h2 class="text-sm sm:text-base font-bold text-center">اطلاعات مشتری</h2>
+          </div>
 
-      </div>
+
+          <div id="stepper" class="flex items-center gap-3 justify-center text-[12px]">
+            <!-- Step 1 -->
+            <button class="step group flex flex-col items-center gap-1" data-step="1" type="button">
+              <span class="step-dot grid place-items-center w-7 h-7 rounded-lg
+                              bg-blue-300 text-[#1100FF] font-bold border-0
+                               transition-colors">
+                1
+              </span>
+              <span class="text-[11px] text-gray-500 ">اطلاعات شخصی</span>
+            </button>
+
+            <div class="flex-1 h-0 border-t-2 border-dashed border-gray-300" data-connector="1"></div>
+
+            <!-- Step 2 -->
+            <button class="step group flex flex-col items-center gap-1" data-step="2" type="button">
+              <span class="step-dot grid place-items-center w-7 h-7 rounded-lg
+                             bg-blue-300 text-[#1100FF] font-bold border-0
+                             transition-colors">
+                2
+              </span>
+              <span class="text-[11px] text-gray-500 ">اطلاعات سفر</span>
+            </button>
+
+            <div class="flex-1 h-0 border-t-2 border-dashed border-gray-300" data-connector="2"></div>
+
+            <!-- Step 3 -->
+            <button class="step group flex flex-col items-center gap-1" data-step="3" type="button">
+              <span class="step-dot grid place-items-center w-7 h-7 rounded-lg
+                             bg-[#1100FF] text-white font-bold border-0
+                             transition-colors">
+                3
+              </span>
+              <span class="text-[11px] text-gray-500 ">پیام ثبت</span>
+            </button>
+          </div>
+
+
+  <div class="flex justify-center w-full">
+    <div class="flex items-center justify-center p-0">
+      <img src="{{ asset('img/3.png') }}" alt="img3" class="h-56 sm:h-60 object-contain" />
     </div>
+  </div>
 
-    <!-- ستون عکس (در موبایل پایین بیاد) -->
-    <div class="flex-1 lg:w-7/12 flex items-center justify-center p-4 sm:p-5 order-2 lg:order-2">
-      <div class="w-full max-w-[1000px] rounded-2xl overflow-hidden">
-        <img src="/img/customer.jpg" alt="Success Illustration"
-             class="w-full h-auto object-cover rounded-2xl">
-      </div>
-    </div>
 
+  <p class="text-center text-gray-800 font-bold text-sm sm:text-base mt-0 mb-0">
+    اطلاعات با موفقیت ثبت شد.
+  </p>
+
+  <div class="w-full mt-0">
+    <a href="{{ route('customers.page') }}"
+       class="block text-center bg-[#FF0000] hover:bg-[#CA0808] text-white w-full text-xs sm:text-sm p-2.5 rounded-lg transition">
+       برگشت به صفحه اصلی
+    </a>
   </div>
 </div>
-<!-- ✅ فونت وزیر از گوگل -->
-<link 
-href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<style>
-  * {
-    font-family: "Vazirmatn", sans-serif !important;
-  }
-</style>
+        </div>
+      </div>
 
+    </div>
+  </div>
+
+  <script>
+    // انیمیشن نرم
+    window.addEventListener('DOMContentLoaded', () => {
+      const card = document.getElementById('card');
+      setTimeout(() => card.classList.add('show'), 100);
+    });
+
+    // استپر
+    let current = 1;
+    const stepper = document.getElementById('stepper');
+    const steps = [...stepper.querySelectorAll('.step')];
+    const connectors = [...stepper.querySelectorAll('[data-connector]')];
+
+    function render() {
+      steps.forEach(btn => {
+        const s = Number(btn.dataset.step);
+        btn.classList.toggle('active', s === current);
+      });
+      connectors.forEach(c => {
+        const idx = Number(c.dataset.connector);
+        c.classList.toggle('border-blue-700', current > idx);
+        c.classList.toggle('border-gray-300', !(current > idx));
+      });
+    }
+
+    steps.forEach(btn => btn.addEventListener('click', () => {
+      current = Number(btn.dataset.step);
+      render();
+    }));
+
+    render();
+  </script>
+   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* انیمیشن Fade-in + Scale */
+    .fade-scale {
+      opacity: 0;
+      transform: scale(0.95);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .fade-scale.show {
+      opacity: 1;
+      transform: scale(1);
+    }
+  </style>
+</body>
 @endsection
