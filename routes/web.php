@@ -47,6 +47,7 @@ Route::get('/drivers-Information', function () {
     return view('driversInformation');
 });
 
+<<<<<<< HEAD
 // Protected Routes (نیاز به احراز هویت)
 Route::middleware('auth')->group(function () {
     // Dashboard
@@ -59,3 +60,34 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [UserController::class, 'profile'])->name('profile');
     Route::put('/profile', [UserController::class, 'updateProfile'])->name('profile.update');
 });
+=======
+// Dashboard
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+// User Management Routes
+Route::resource('users', UserController::class);
+
+// Profile Routes
+Route::get('/profile', [UserController::class, 'profile'])->name('profile');
+Route::put('/profile', [UserController::class, 'updateProfile'])->name('profile.update');
+// customersPage
+Route::get('/customers-Page', function () {
+
+  
+    return view( 'customersPage'); 
+});
+
+// customersForm
+Route::get('/customers-Form', function () {
+
+  
+    return view( 'customersForm'); 
+});
+
+// driversInformation
+Route::get('/customers-Information', function () {
+
+  
+    return view( 'customersInformation'); 
+});
+>>>>>>> c5697405bde666ff21fb3759eb07ffa64f455615
