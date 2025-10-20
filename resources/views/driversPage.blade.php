@@ -1,7 +1,5 @@
 @extends('layouts.app')
-
 @section('title','رانندگان')
-
 @section('content')
 
 @php
@@ -103,7 +101,7 @@
     </button>
   </div>
 <!-- جدول دسکتاپ و تبلت -->
-<div class=" rounded-lg mt-4 hidden md:block ">
+<div class="mt-4 hidden md:block ">
   <table class="min-w-full bg-white text-right text-sm ">
     <thead class="bg-gray-100 text-gray-900">
       <tr class="text-xs sm:text-sm md:text-[13px] lg:text-sm">

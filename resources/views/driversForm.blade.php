@@ -1,17 +1,19 @@
 @extends('layouts.app')
+@section('title', 'رانندگان')
 @section('content')
+
 <body class="bg-gray-100 font-sans text-gray-800 w-full overflow-x-hidden overflow-y-auto min-h-screen flex items-center justify-center">
 
-  <div class="w-full max-w-[800px]  fade-scale bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col lg:flex-row mb-4 relative mx-auto m-3 sm:m-4" id="card">
+  <div class="w-full max-w-[800px] fade-scale bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col lg:flex-row mb-4 relative mx-auto m-3 sm:m-4" id="card">
 
     <!-- ستون فرم -->
-    <div class="flex-1 flex items-start justify-center p-4 lg:p-6 order-1  lg:order-1">
+    <div class="flex-1 flex items-start justify-center p-4 lg:p-6 order-1 lg:order-1">
       <div class="w-full max-w-md">
         <h2 class="text-xl sm:text-2xl font-bold text-center mt-2">اطلاعات راننده</h2>
-        <p class="text-[10px] text-gray-500 text-center mb-6 mt-2">لطفا اطلاعات را وارد کنید.</p>
-        <div class="border-t-2 border-[#0400FF] mb-4"></div>
+        <p class="text-[10px]  text-center mt-2">لطفا اطلاعات را وارد کنید.</p>
+        <div class="border-t-2 mt-2 border-[#0400FF] mb-4"></div>
 
-        <form action="#" class="space-y-6 w-full">
+          <form action="#" class="space-y-6 w-full">
           <!-- شبکه اینپوت‌ها -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-9">
 
@@ -136,39 +138,35 @@
             </a>
           </div>
         </form>
+
       </div>
     </div>
 
     <!-- ستون تصویر -->
     <div class="flex-1 flex items-center justify-center p-4 order-2 lg:order-2">
-        <div class="w-full max-w-[450px] overflow-hidden">
-            <img src="/img/car.jpeg"
-                alt="Success Illustration"
-                class="w-full h-[450px] object-cover rounded-lg"/>
-        </div>
+      <div class="w-full max-w-[450px] overflow-hidden">
+        <img src="/img/car.jpeg"
+             alt="Success Illustration"
+             class="w-full h-[450px] object-cover rounded-lg"/>
+      </div>
     </div>
 
   </div>
+
   <script>
     window.addEventListener("DOMContentLoaded", () => {
-        const card = document.getElementById("card");
-        setTimeout(() => {
+      const card = document.getElementById("card");
+      setTimeout(() => {
         card.classList.add("show");
-        }, 100);
+      }, 100);
     });
   </script>
-   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- فونت وزیر -->
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <style>
-    body {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
     * {
       font-family: "Vazirmatn", sans-serif !important;
       box-sizing: border-box !important;
@@ -188,5 +186,6 @@
       transform: scale(1);
     }
   </style>
+
 </body>
 @endsection

@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl" class="overflow-x-hidden">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>پروفایل من</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    /* Fade-in + Scale */
-    .fade-scale{opacity:0;transform:scale(.98);transition:opacity .45s ease,transform .45s ease}
-    .fade-scale.show{opacity:1;transform:scale(1)}
-  </style>
-</head>
+@extends('layouts.app')
+@section('title','پروفایل من')
+@section('content')
+
 <body class="bg-gray-100 overflow-hidden flex items-center justify-center ">
 
 
@@ -129,13 +120,14 @@
 
 
       <div class="flex flex-col sm:flex-row gap-2 mt-3 w-full">
-        <a href="{{ route('profile.complete') }}" class=" text-center w-full bg-[#0400FF] text-white px-5 py-2 text-xs sm:text-sm rounded-xl hover:bg-blue-800">
-          ثبت
-</a>
-        <a href="{{ route('home') }}"
+          <a href="{{ route('home') }}"
            class="w-full text-center bg-[#FF0000] text-white px-5 py-2 text-xs sm:text-sm rounded-xl hover:bg-red-600">
           برگشت
         </a>
+        <a href="{{ route('profile.complete') }}" class=" text-center w-full bg-[#0400FF] text-white px-5 py-2 text-xs sm:text-sm rounded-xl hover:bg-blue-800">
+          ثبت
+</a>
+
       </div>
     </div>
 
@@ -164,5 +156,11 @@
       if (card) setTimeout(() => card.classList.add('show'), 80);
     });
   </script>
+   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Fade-in + Scale */
+    .fade-scale{opacity:0;transform:scale(.98);transition:opacity .45s ease,transform .45s ease}
+    .fade-scale.show{opacity:1;transform:scale(1)}
+  </style>
 </body>
-</html>
+@endsection

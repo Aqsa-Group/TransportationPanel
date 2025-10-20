@@ -1,6 +1,5 @@
 @extends('layouts.app')
-@section('title','داشبورد')
-
+@section('title','گزارشات')
 @section('content')
 
     <!-- ✅ Tailwind CSS -->
@@ -941,6 +940,10 @@
             tooltip.style.opacity = "0";
         });
         });
+
+
+
+
     </script>
     @section('styles')
     <style>

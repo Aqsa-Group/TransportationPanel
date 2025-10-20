@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title','سفارشات')
 @section('content')
 <body class="bg-gray-100 font-sans text-gray-800 w-full overflow-x-hidden overflow-y-auto min-h-screen flex items-center justify-center">
 

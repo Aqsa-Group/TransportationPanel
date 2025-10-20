@@ -1,7 +1,5 @@
 @extends('layouts.app')
-
 @section('title','مشتریان')
-
 @section('content')
 
 @php

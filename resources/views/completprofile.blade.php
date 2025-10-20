@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl" class="overflow-x-hidden">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>پروفایل من</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .fade-scale{opacity:0;transform:scale(.98);transition:opacity .45s ease,transform .45s ease}
-    .fade-scale.show{opacity:1;transform:scale(1)}
-  </style>
-</head>
+@extends('layouts.app')
+@section('title','پروفایل من')
+@section('content')
+
 <body class="bg-gray-100  overflow-hidden flex items-center justify-center">
 
   <div id="card" class="fade-scale bg-white shadow-lg rounded-2xl w-[95%] max-w-2xl m-4
@@ -61,5 +53,10 @@
       if (card) setTimeout(() => card.classList.add('show'), 80);
     });
   </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fade-scale{opacity:0;transform:scale(.98);transition:opacity .45s ease,transform .45s ease}
+    .fade-scale.show{opacity:1;transform:scale(1)}
+  </style>
 </body>
-</html>
+@endsection

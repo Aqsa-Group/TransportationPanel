@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title','ادمین ها')
 @section('content')
 
 <body class="bg-gray-100 flex items-center justify-center">

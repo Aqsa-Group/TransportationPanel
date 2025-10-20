@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'داشبورد')
+@section('title', 'نقشه')
 
 @section('content')
 <main class="p-3 overflow-x-hidden">

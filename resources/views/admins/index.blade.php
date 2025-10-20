@@ -1,14 +1,13 @@
 @extends('layouts.app')
 @section('title','ادمین‌ها')
-
 @section('content')
 <section dir="rtl" class="h-full flex flex-col">
-  <div class="px-0 py-0 md:px-2 md:pt-2 flex-1">
-    <div class="w-full mx-auto max-w-none md:max-w-[1100px] xl:max-w-screen-xl">
-      <div class="h-full w-full bg-white border-0 md:border rounded-none md:rounded-lg p-0 md:p-6 shadow-none md:shadow-md overflow-hidden">
+  <div class="px-0  py-0 md:px-2 md:pt-2  flex-1">
+    <div class="w-full  mx-auto max-w-none   md:max-w-[1100px] xl:max-w-screen-xl">
+      <div class="h-full w-full bg-white border-0 md:border rounded-2xl md:rounded-2xl p-0 md:p-6 shadow-none md:shadow-md overflow-hidden">
 
         {{-- هدر --}}
-        <div class="px-3 sm:px-4 py-3 border-b flex items-center justify-between gap-2">
+        <div class="px-3  sm:px-4 py-3 border-b flex items-center justify-between gap-2">
           <h1 class="text-lg sm:text-xl font-bold">ادمین‌ها</h1>
 
           <a href="{{ route('admins.infoadmin') }}"
