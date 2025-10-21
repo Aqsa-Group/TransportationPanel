@@ -158,9 +158,46 @@
   </script>
    <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    /* Fade-in + Scale */
-    .fade-scale{opacity:0;transform:scale(.98);transition:opacity .45s ease,transform .45s ease}
-    .fade-scale.show{opacity:1;transform:scale(1)}
+      /* جلوگیری کامل از اسکرول افقی در همه دستگاه‌ها */
+  html, body {
+    overflow-x: hidden !important;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* برای اطمینان: همه عناصر داخل صفحه از عرض خارج نشن */
+  * {
+    box-sizing: border-box;
+  }
+
+  /* اگر تصاویر باعث اسکرول می‌شن */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* اختیاری: در حالت موبایل، اطمینان از محدود ماندن محتوا */
+  @media (max-width: 768px) {
+    #card {
+      width: 95% !important;
+      margin: 0 auto !important;
+      overflow: hidden !important;
+    }
+  }
+
+  /* انیمیشن اصلی */
+  .fade-scale {
+    opacity: 0;
+    transform: scale(.98);
+    transition: opacity .45s ease, transform .45s ease;
+  }
+
+  .fade-scale.show {
+    opacity: 1;
+    transform: scale(1);
+  }
+
   </style>
 </body>
 @endsection
